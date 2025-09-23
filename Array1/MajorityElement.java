@@ -1,6 +1,6 @@
-
 Question link{https://leetcode.com/problems/majority-element/description/}
 
+package Array1;
 import java.util.*;
 public class MajorityElement{
     public static void Majority(int nums[]){
