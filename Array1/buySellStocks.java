@@ -1,5 +1,6 @@
 Question link {https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/}
 
+package Array1;
 import java.util.*;
 public class buySellStocks{
     public static void BuySellStocks(int prices[]){
