@@ -1,3 +1,5 @@
+Question link{https://leetcode.com/problems/find-missing-and-repeated-values/description/}
+
 public class MissingandRepeated {
     public static int[] missingandrepeated(int grid[][]){
         int n = grid.length;
