@@ -1,4 +1,4 @@
-
+//Question link{https://leetcode.com/problems/single-number/description/}
 
 public class SingleElement {
     public static void singleElement(int nums[]){

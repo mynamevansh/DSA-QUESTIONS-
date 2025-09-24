@@ -1,7 +1,4 @@
-
 //Question link{https://leetcode.com/problems/majority-element/description/}
-
-
 import java.util.*;
 public class MajorityElement{
     public static void Majority(int nums[]){
