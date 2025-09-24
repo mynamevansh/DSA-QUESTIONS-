@@ -1,4 +1,4 @@
-package Array1;
+
 
 public class SingleElement {
     public static void singleElement(int nums[]){
