@@ -1,4 +1,4 @@
-Question link{https://leetcode.com/problems/maximum-subarray/}
+//Question link{https://leetcode.com/problems/maximum-subarray/}
 
 package Array2;
 public class Maxsubarray {
@@ -16,12 +16,13 @@ public class Maxsubarray {
         System.out.println(maxSubArray(nums));
     }
 }
-------------------------------------------------------------
-(but what happen if all the elements in the array are negative????)
+//---------------------------------------------------------------------------
+//(but what happen if all the elements in the array are negative????)
 
+/* 
 package Array2;
 
-public class Maxsubarray {
+public class axsubarray {
     public static int maxSubArray(int[] nums){
         int sum = nums[0];
         int max = nums[0];
@@ -36,3 +37,5 @@ public class Maxsubarray {
         System.out.println(maxSubArray(nums));
     }
 }
+
+*/

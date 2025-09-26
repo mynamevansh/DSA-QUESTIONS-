@@ -1,5 +1,6 @@
 //question link {https://leetcode.com/problems/container-with-most-water/description/}
 //NOTE: This is the follow up question of trapped rainwater
+
 package Array2;
 
 public class trappedrainwater {
