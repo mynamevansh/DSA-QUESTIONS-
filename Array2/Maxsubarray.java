@@ -1,5 +1,6 @@
-package Array2;
+Question link{https://leetcode.com/problems/maximum-subarray/}
 
+package Array2;
 public class Maxsubarray {
     public static int maxSubArray(int[] nums){
         int sum = 0;
