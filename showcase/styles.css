@@ -1,0 +1,247 @@
+.algorithms-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); 
+    gap: 2rem; 
+    margin: 3rem 0; 
+    padding: 0 1rem;
+}
+
+.algorithm-card { 
+    position: relative;
+    height: 300px;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px; 
+    background: #ffffff; 
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.algorithm-card:hover {
+    border-color: #2563eb;
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    backface-visibility: hidden;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border-radius: 16px;
+}
+
+.algorithm-card.flipped .card-front {
+    transform: rotateY(180deg);
+}
+
+.algorithm-card.flipped .card-back {
+    transform: rotateY(0deg);
+}
+
+.problem-type {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #1e40af;
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    padding: 0.4rem 1rem;
+    border-radius: 24px;
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: 'Inter', sans-serif;
+}
+
+.algorithm-card h3 {
+    color: #0f172a;
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.025em;
+}
+
+.complexity {
+    display: flex;
+    gap: 0.875rem;
+    margin-bottom: 1.25rem;
+}
+
+.time, .space {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    letter-spacing: -0.025em;
+}
+
+.time {
+    background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+    color: #14532d;
+    border: 1px solid #22c55e20;
+}
+
+.space {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    color: #92400e;
+    border: 1px solid #f59e0b20;
+}
+
+.algorithm-name {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #475569;
+    margin-bottom: 1.25rem;
+    padding: 0.75rem 0;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: center;
+    background: linear-gradient(90deg, #f8fafc 0%, #f1f5f9 50%, #f8fafc 100%);
+}
+
+.companies {
+    font-size: 0.8rem;
+    color: #64748b;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.025em;
+}
+
+.back-content h4 {
+    color: #1e293b;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.625rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Inter', sans-serif;
+}
+
+.back-content p {
+    color: #475569;
+    font-size: 0.9rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.demo-btn {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 1.25rem;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.025em;
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.3);
+}
+
+.demo-btn:hover {
+    background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px -1px rgba(37, 99, 235, 0.4);
+}
+
+.result { 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #e2e8f0;
+    padding: 1.25rem;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace; 
+    font-size: 0.8rem;
+    line-height: 1.5;
+    border-radius: 0 0 16px 16px;
+    display: none;
+    max-height: 130px;
+    overflow-y: auto;
+    border-top: 1px solid #334155;
+}
+
+.result strong {
+    color: #60a5fa;
+    font-weight: 600;
+}
+
+.result.visible {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2.25rem;
+    }
+    
+    .algorithms-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin: 2rem 0;
+        padding: 0 0.5rem;
+    }
+    
+    .algorithm-card {
+        height: 280px;
+    }
+    
+    .card-front, .card-back {
+        padding: 1.5rem;
+    }
+    
+    .container {
+        padding: 0 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 2rem 0;
+    }
+    
+    .header h1 {
+        font-size: 1.875rem;
+    }
+    
+    .algorithms-grid {
+        gap: 1.25rem;
+        padding: 0 0.25rem;
+    }
+    
+    .algorithm-card {
+        height: 260px;
+    }
+    
+    .card-front, .card-back {
+        padding: 1.25rem;
+    }
+    
+    .demo-btn {
+        width: 100%;
+        padding: 0.875rem;
+    }
+    
+    .complexity {
+        gap: 0.5rem;
+    }
+    
+    .time, .space {
+        padding: 0.375rem 0.75rem;
+        font-size: 0.8rem;
+    }
+}

@@ -125,14 +125,11 @@ function runMajorityElement() {
     );
     
     const resultDiv = document.getElementById('majority-result');
-    resultDiv.style.display = 'block';
+    resultDiv.className = 'result visible';
     resultDiv.innerHTML = `
         <strong>Input:</strong> [${input.join(', ')}]<br>
-        <strong>Majority Element:</strong> ${performance.result}<br>
-        <strong>Algorithm:</strong> Boyer-Moore Voting<br>
-        <strong>Time Complexity:</strong> O(n)<br>
-        <strong>Space Complexity:</strong> O(1)<br>
-        <strong>Execution Time:</strong> ${performance.executionTime}ms
+        <strong>Output:</strong> ${performance.result}<br>
+        <strong>Time:</strong> ${performance.executionTime}ms
     `;
 }
 
@@ -145,14 +142,11 @@ function runTrappedRainwater() {
     );
     
     const resultDiv = document.getElementById('rainwater-result');
-    resultDiv.style.display = 'block';
+    resultDiv.className = 'result visible';
     resultDiv.innerHTML = `
         <strong>Heights:</strong> [${input.join(', ')}]<br>
-        <strong>Water Trapped:</strong> ${performance.result} units<br>
-        <strong>Algorithm:</strong> Two Pointer<br>
-        <strong>Time Complexity:</strong> O(n)<br>
-        <strong>Space Complexity:</strong> O(1)<br>
-        <strong>Execution Time:</strong> ${performance.executionTime}ms
+        <strong>Water:</strong> ${performance.result} units<br>
+        <strong>Time:</strong> ${performance.executionTime}ms
     `;
 }
 
@@ -165,14 +159,11 @@ function runMaxSubarray() {
     );
     
     const resultDiv = document.getElementById('subarray-result');
-    resultDiv.style.display = 'block';
+    resultDiv.className = 'result visible';
     resultDiv.innerHTML = `
         <strong>Array:</strong> [${input.join(', ')}]<br>
-        <strong>Maximum Sum:</strong> ${performance.result}<br>
-        <strong>Algorithm:</strong> Kadane's Algorithm<br>
-        <strong>Time Complexity:</strong> O(n)<br>
-        <strong>Space Complexity:</strong> O(1)<br>
-        <strong>Execution Time:</strong> ${performance.executionTime}ms
+        <strong>Max Sum:</strong> ${performance.result}<br>
+        <strong>Time:</strong> ${performance.executionTime}ms
     `;
 }
 
@@ -186,15 +177,11 @@ function runSearch2D() {
     );
     
     const resultDiv = document.getElementById('search2d-result');
-    resultDiv.style.display = 'block';
+    resultDiv.className = 'result visible';
     resultDiv.innerHTML = `
-        <strong>Matrix:</strong> 4x4 sorted matrix<br>
         <strong>Target:</strong> ${target}<br>
         <strong>Found:</strong> ${performance.result}<br>
-        <strong>Algorithm:</strong> Binary Search<br>
-        <strong>Time Complexity:</strong> O(m + n)<br>
-        <strong>Space Complexity:</strong> O(1)<br>
-        <strong>Execution Time:</strong> ${performance.executionTime}ms
+        <strong>Time:</strong> ${performance.executionTime}ms
     `;
 }
 
@@ -207,14 +194,11 @@ function runStockProfit() {
     );
     
     const resultDiv = document.getElementById('stock-result');
-    resultDiv.style.display = 'block';
+    resultDiv.className = 'result visible';
     resultDiv.innerHTML = `
         <strong>Prices:</strong> [${input.join(', ')}]<br>
-        <strong>Maximum Profit:</strong> $${performance.result}<br>
-        <strong>Algorithm:</strong> Single Pass<br>
-        <strong>Time Complexity:</strong> O(n)<br>
-        <strong>Space Complexity:</strong> O(1)<br>
-        <strong>Execution Time:</strong> ${performance.executionTime}ms
+        <strong>Profit:</strong> $${performance.result}<br>
+        <strong>Time:</strong> ${performance.executionTime}ms
     `;
 }
 
@@ -227,18 +211,66 @@ function runPowerFunction() {
     );
     
     const resultDiv = document.getElementById('power-result');
-    resultDiv.style.display = 'block';
+    resultDiv.className = 'result visible';
     resultDiv.innerHTML = `
         <strong>Base:</strong> ${x}<br>
         <strong>Exponent:</strong> ${n}<br>
         <strong>Result:</strong> ${performance.result}<br>
-        <strong>Algorithm:</strong> Fast Exponentiation<br>
-        <strong>Time Complexity:</strong> O(log n)<br>
-        <strong>Space Complexity:</strong> O(1)<br>
-        <strong>Execution Time:</strong> ${performance.executionTime}ms
+        <strong>Time:</strong> ${performance.executionTime}ms
     `;
 }
 
-// Performance logging
+// Performance logging and monitoring
 console.log('🚀 DSA Algorithms loaded successfully!');
 console.log('📊 Performance monitoring enabled');
+
+// Web Performance Monitoring
+class WebPerformanceMonitor {
+    static logPageLoadMetrics() {
+        window.addEventListener('load', function() {
+            // Wait for all resources to load
+            setTimeout(() => {
+                const perfData = performance.getEntriesByType('navigation')[0];
+                const paintEntries = performance.getEntriesByType('paint');
+                
+                const metrics = {
+                    'DNS Lookup': perfData.domainLookupEnd - perfData.domainLookupStart,
+                    'TCP Connect': perfData.connectEnd - perfData.connectStart,
+                    'TTFB (Time to First Byte)': perfData.responseStart - perfData.requestStart,
+                    'DOM Content Loaded': perfData.domContentLoadedEventEnd - perfData.navigationStart,
+                    'Full Page Load': perfData.loadEventEnd - perfData.navigationStart,
+                    'First Paint': paintEntries.find(p => p.name === 'first-paint')?.startTime || 'N/A',
+                    'First Contentful Paint': paintEntries.find(p => p.name === 'first-contentful-paint')?.startTime || 'N/A'
+                };
+                
+                console.group('📈 Performance Metrics');
+                Object.entries(metrics).forEach(([key, value]) => {
+                    const time = typeof value === 'number' ? `${value.toFixed(2)}ms` : value;
+                    console.log(`${key}: ${time}`);
+                });
+                console.groupEnd();
+                
+                // Store metrics for Lighthouse comparison
+                window.performanceMetrics = metrics;
+            }, 0);
+        });
+    }
+}
+
+// Initialize performance monitoring
+WebPerformanceMonitor.logPageLoadMetrics();
+
+// Card flip functionality for interactive flashcards
+function toggleCard(cardId) {
+    const card = document.querySelector(`#${cardId}-back`).parentElement;
+    card.classList.toggle('flipped');
+    
+    // Close result if open when flipping back
+    if (!card.classList.contains('flipped')) {
+        const result = document.getElementById(`${cardId}-result`);
+        if (result) {
+            result.style.display = 'none';
+            result.innerHTML = '';
+        }
+    }
+}

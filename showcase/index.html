@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive DSA algorithms showcase with performance monitoring for technical interviews">
+    <title>DSA Algorithms - Interview Questions</title>
+    
+    
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <
+    <link rel="preload" href="algorithms.js" as="script">
+    
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; 
+            line-height: 1.6; 
+            color: #1a202c; 
+            background: #fafafa;
+            font-weight: 400;
+        }
+        .header { 
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%); 
+            color: white; 
+            padding: 3rem 0; 
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(37, 99, 235, 0.15);
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+        h1 { 
+            font-size: 2.75rem; 
+            margin-bottom: 0.75rem; 
+            font-weight: 700;
+            letter-spacing: -0.025em;
+        }
+        .header p { 
+            margin-bottom: 0.5rem; 
+            font-size: 1.1rem;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+        .header strong {
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 0.025em;
+        }
+    </style>
+    
+    <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>🚀 DSA Algorithms Showcase</h1>
+            <p>Company Interview Questions - Optimized Solutions</p>
+            <p><strong>FAANG • Microsoft • Adobe • Goldman Sachs</strong></p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="algorithms-grid">
+            <div class="algorithm-card" onclick="toggleCard('majority')">
+                <div class="card-front">
+                    <div class="problem-type">Array | Voting</div>
+                    <h3>🗳️ Majority Element</h3>
+                    <div class="complexity">
+                        <span class="time">O(n)</span>
+                        <span class="space">O(1)</span>
+                    </div>
+                    <div class="algorithm-name">Boyer-Moore Voting</div>
+                    <div class="companies">Google • Facebook • Amazon</div>
+                </div>
+                <div class="card-back" id="majority-back">
+                    <div class="back-content">
+                        <h4>Key Concept</h4>
+                        <p>Cancel out different elements, survivor is majority</p>
+                        <h4>Approach</h4>
+                        <p>1. Track candidate & count<br>2. Reset when count = 0<br>3. Return final candidate</p>
+                        <button class="demo-btn" onclick="event.stopPropagation(); runMajorityElement()">Demo</button>
+                    </div>
+                </div>
+                <div id="majority-result" class="result"></div>
+            </div>
+
+            <div class="algorithm-card" onclick="toggleCard('rainwater')">
+                <div class="card-front">
+                    <div class="problem-type">Array | Two Pointers</div>
+                    <h3>💧 Trapped Rainwater</h3>
+                    <div class="complexity">
+                        <span class="time">O(n)</span>
+                        <span class="space">O(1)</span>
+                    </div>
+                    <div class="algorithm-name">Two Pointer Technique</div>
+                    <div class="companies">Microsoft • Adobe • LinkedIn</div>
+                </div>
+                <div class="card-back" id="rainwater-back">
+                    <div class="back-content">
+                        <h4>Key Concept</h4>
+                        <p>Water level = min(leftMax, rightMax)</p>
+                        <h4>Approach</h4>
+                        <p>1. Left & right pointers<br>2. Track max heights<br>3. Add trapped water</p>
+                        <button class="demo-btn" onclick="event.stopPropagation(); runTrappedRainwater()">Demo</button>
+                    </div>
+                </div>
+                <div id="rainwater-result" class="result"></div>
+            </div>
+
+            <div class="algorithm-card" onclick="toggleCard('subarray')">
+                <div class="card-front">
+                    <div class="problem-type">Array | DP</div>
+                    <h3>📈 Maximum Subarray</h3>
+                    <div class="complexity">
+                        <span class="time">O(n)</span>
+                        <span class="space">O(1)</span>
+                    </div>
+                    <div class="algorithm-name">Kadane's Algorithm</div>
+                    <div class="companies">Apple • Netflix • Uber</div>
+                </div>
+                <div class="card-back" id="subarray-back">
+                    <div class="back-content">
+                        <h4>Key Concept</h4>
+                        <p>Reset sum when it becomes negative</p>
+                        <h4>Approach</h4>
+                        <p>1. Track current & max sum<br>2. Extend or restart subarray<br>3. Update maximum found</p>
+                        <button class="demo-btn" onclick="event.stopPropagation(); runMaxSubarray()">Demo</button>
+                    </div>
+                </div>
+                <div id="subarray-result" class="result"></div>
+            </div>
+
+            <div class="algorithm-card" onclick="toggleCard('search2d')">
+                <div class="card-front">
+                    <div class="problem-type">Matrix | Binary Search</div>
+                    <h3>🔍 Search 2D Matrix</h3>
+                    <div class="complexity">
+                        <span class="time">O(m+n)</span>
+                        <span class="space">O(1)</span>
+                    </div>
+                    <div class="algorithm-name">Staircase Search</div>
+                    <div class="companies">Google • Amazon • Microsoft</div>
+                </div>
+                <div class="card-back" id="search2d-back">
+                    <div class="back-content">
+                        <h4>Key Concept</h4>
+                        <p>Start from top-right corner</p>
+                        <h4>Approach</h4>
+                        <p>1. Start at top-right<br>2. Go left if target smaller<br>3. Go down if target larger</p>
+                        <button class="demo-btn" onclick="event.stopPropagation(); runSearch2D()">Demo</button>
+                    </div>
+                </div>
+                <div id="search2d-result" class="result"></div>
+            </div>
+
+            <div class="algorithm-card" onclick="toggleCard('stock')">
+                <div class="card-front">
+                    <div class="problem-type">Array | Greedy</div>
+                    <h3>💰 Buy/Sell Stocks</h3>
+                    <div class="complexity">
+                        <span class="time">O(n)</span>
+                        <span class="space">O(1)</span>
+                    </div>
+                    <div class="algorithm-name">Single Pass</div>
+                    <div class="companies">Facebook • Goldman Sachs • JP Morgan</div>
+                </div>
+                <div class="card-back" id="stock-back">
+                    <div class="back-content">
+                        <h4>Key Concept</h4>
+                        <p>Track minimum price seen so far</p>
+                        <h4>Approach</h4>
+                        <p>1. Track min price<br>2. Calculate profit daily<br>3. Keep max profit</p>
+                        <button class="demo-btn" onclick="event.stopPropagation(); runStockProfit()">Demo</button>
+                    </div>
+                </div>
+                <div id="stock-result" class="result"></div>
+            </div>
+
+            <div class="algorithm-card" onclick="toggleCard('power')">
+                <div class="card-front">
+                    <div class="problem-type">Math | Recursion</div>
+                    <h3>🔢 Power Function</h3>
+                    <div class="complexity">
+                        <span class="time">O(log n)</span>
+                        <span class="space">O(1)</span>
+                    </div>
+                    <div class="algorithm-name">Fast Exponentiation</div>
+                    <div class="companies">Adobe • Spotify • Airbnb</div>
+                </div>
+                <div class="card-back" id="power-back">
+                    <div class="back-content">
+                        <h4>Key Concept</h4>
+                        <p>Square base, halve exponent</p>
+                        <h4>Approach</h4>
+                        <p>1. Handle edge cases<br>2. Use bit manipulation<br>3. Square & divide</p>
+                        <button class="demo-btn" onclick="event.stopPropagation(); runPowerFunction()">Demo</button>
+                    </div>
+                </div>
+                <div id="power-result" class="result"></div>
+            </div>
+        </div>
+    </main>
+
+    <script defer src="algorithms.js"></script>
+    
+    <script>
+        window.addEventListener('load', function() {
+            console.log('📊 Analytics initialized after page load');
+        });
+    </script>
+    
+    <script>
+        (function() {
+            var link = document.querySelector('link[rel="preload"][as="style"]');
+            if (link && !link.relList.supports('preload')) {
+                link.rel = 'stylesheet';
+            }
+        })();
+    </script>
+</body>
+</html>
