@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Algorithms - Interview Questions</title>
+    
+    <!-- Critical CSS - Inline for fast loading -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem 0; text-align: center; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+        .algorithms-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0; }
+        .algorithm-card { border: 1px solid #ddd; border-radius: 8px; padding: 1.5rem; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .btn { background: #007acc; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 4px; cursor: pointer; }
+        .btn:hover { background: #005a9e; }
+        .result { margin-top: 1rem; padding: 1rem; background: #f8f9fa; border-radius: 4px; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>🚀 DSA Algorithms Showcase</h1>
+            <p>Company Interview Questions - Optimized Solutions</p>
+            <p><strong>FAANG • Microsoft • Adobe • Goldman Sachs</strong></p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="algorithms-grid">
+            <div class="algorithm-card">
+                <h3>🗳️ Majority Element (Boyer-Moore)</h3>
+                <p>Find the majority element in O(n) time and O(1) space</p>
+                <button class="btn" onclick="runMajorityElement()">Run Demo</button>
+                <div id="majority-result" class="result" style="display: none;"></div>
+            </div>
+
+            <div class="algorithm-card">
+                <h3>💧 Trapped Rainwater</h3>
+                <p>Calculate trapped rainwater using two-pointer technique</p>
+                <button class="btn" onclick="runTrappedRainwater()">Run Demo</button>
+                <div id="rainwater-result" class="result" style="display: none;"></div>
+            </div>
+
+            <div class="algorithm-card">
+                <h3>📈 Maximum Subarray (Kadane's)</h3>
+                <p>Find maximum sum subarray in linear time</p>
+                <button class="btn" onclick="runMaxSubarray()">Run Demo</button>
+                <div id="subarray-result" class="result" style="display: none;"></div>
+            </div>
+
+            <div class="algorithm-card">
+                <h3>🔍 Search 2D Matrix</h3>
+                <p>Binary search in sorted 2D matrix</p>
+                <button class="btn" onclick="runSearch2D()">Run Demo</button>
+                <div id="search2d-result" class="result" style="display: none;"></div>
+            </div>
+
+            <div class="algorithm-card">
+                <h3>💰 Buy/Sell Stocks</h3>
+                <p>Find maximum profit from stock prices</p>
+                <button class="btn" onclick="runStockProfit()">Run Demo</button>
+                <div id="stock-result" class="result" style="display: none;"></div>
+            </div>
+
+            <div class="algorithm-card">
+                <h3>🔢 Power Function</h3>
+                <p>Efficient exponentiation with edge cases</p>
+                <button class="btn" onclick="runPowerFunction()">Run Demo</button>
+                <div id="power-result" class="result" style="display: none;"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Performance optimized scripts - loaded with defer -->
+    <script src="algorithms.js" defer></script>
+    
+    <!-- Third-party analytics - deferred to not block rendering -->
+    <script async>
+        // Simulated analytics (replace with real analytics if needed)
+        console.log('Analytics loaded asynchronously');
+    </script>
+</body>
+</html>
