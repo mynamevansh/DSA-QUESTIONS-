@@ -80,6 +80,35 @@ class DSAAlgorithms {
         return maxProfit;
     }
 
+    // Sort Colors - Dutch National Flag Algorithm
+    static sortColors(nums) {
+        let lower = 0, mid = 0, high = nums.length - 1;
+        const result = [...nums]; // Copy for visualization
+        
+        while(mid <= high) {
+            if(result[mid] === 0) {
+                [result[lower], result[mid]] = [result[mid], result[lower]];
+                lower++;
+                mid++;
+            } else if(result[mid] === 1) {
+                mid++;
+            } else if(result[mid] === 2) {
+                [result[mid], result[high]] = [result[high], result[mid]];
+                high--;
+            }
+        }
+        return result;
+    }
+
+    // Single Element - XOR Bit Manipulation
+    static singleNumber(nums) {
+        let result = 0;
+        for(let num of nums) {
+            result ^= num; // XOR cancels duplicates
+        }
+        return result;
+    }
+
     // Power Function with Negative Handling
     static myPow(x, n) {
         if(n === 0) return 1;
@@ -198,6 +227,40 @@ function runStockProfit() {
     resultDiv.innerHTML = `
         <strong>Prices:</strong> [${input.join(', ')}]<br>
         <strong>Profit:</strong> $${performance.result}<br>
+        <strong>Time:</strong> ${performance.executionTime}ms
+    `;
+}
+
+function runSortColors() {
+    const input = [2,0,2,1,1,0];
+    const performance = PerformanceMonitor.measure(
+        'Sort Colors',
+        DSAAlgorithms.sortColors,
+        input
+    );
+    
+    const resultDiv = document.getElementById('sortcolors-result');
+    resultDiv.className = 'result visible';
+    resultDiv.innerHTML = `
+        <strong>Input:</strong> [${input.join(', ')}]<br>
+        <strong>Sorted:</strong> [${performance.result.join(', ')}]<br>
+        <strong>Time:</strong> ${performance.executionTime}ms
+    `;
+}
+
+function runSingleElement() {
+    const input = [4,1,2,1,2];
+    const performance = PerformanceMonitor.measure(
+        'Single Element',
+        DSAAlgorithms.singleNumber,
+        input
+    );
+    
+    const resultDiv = document.getElementById('single-result');
+    resultDiv.className = 'result visible';
+    resultDiv.innerHTML = `
+        <strong>Array:</strong> [${input.join(', ')}]<br>
+        <strong>Unique:</strong> ${performance.result}<br>
         <strong>Time:</strong> ${performance.executionTime}ms
     `;
 }

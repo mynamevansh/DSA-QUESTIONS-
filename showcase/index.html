@@ -183,6 +183,52 @@
                 <div id="stock-result" class="result"></div>
             </div>
 
+            <div class="algorithm-card" onclick="toggleCard('single')">
+                <div class="card-front">
+                    <div class="problem-type">Array | Bit Manipulation</div>
+                    <h3>🎯 Single Element</h3>
+                    <div class="complexity">
+                        <span class="time">O(n)</span>
+                        <span class="space">O(1)</span>
+                    </div>
+                    <div class="algorithm-name">XOR Bit Manipulation</div>
+                    <div class="companies">Microsoft • Apple • Facebook</div>
+                </div>
+                <div class="card-back" id="single-back">
+                    <div class="back-content">
+                        <h4>Key Concept</h4>
+                        <p>XOR cancels duplicate elements automatically</p>
+                        <h4>Approach</h4>
+                        <p>1. Initialize result = 0<br>2. XOR all elements<br>3. Duplicates cancel, unique remains</p>
+                        <button class="demo-btn" onclick="event.stopPropagation(); runSingleElement()">Demo</button>
+                    </div>
+                </div>
+                <div id="single-result" class="result"></div>
+            </div>
+
+            <div class="algorithm-card" onclick="toggleCard('sortcolors')">
+                <div class="card-front">
+                    <div class="problem-type">Array | Three Pointers</div>
+                    <h3>🎨 Sort Colors</h3>
+                    <div class="complexity">
+                        <span class="time">O(n)</span>
+                        <span class="space">O(1)</span>
+                    </div>
+                    <div class="algorithm-name">Dutch National Flag</div>
+                    <div class="companies">Facebook • Google • Microsoft</div>
+                </div>
+                <div class="card-back" id="sortcolors-back">
+                    <div class="back-content">
+                        <h4>Key Concept</h4>
+                        <p>Three-way partitioning with pointers</p>
+                        <h4>Approach</h4>
+                        <p>1. Lower, mid, high pointers<br>2. Swap 0s left, 2s right<br>3. Keep 1s in middle</p>
+                        <button class="demo-btn" onclick="event.stopPropagation(); runSortColors()">Demo</button>
+                    </div>
+                </div>
+                <div id="sortcolors-result" class="result"></div>
+            </div>
+
             <div class="algorithm-card" onclick="toggleCard('power')">
                 <div class="card-front">
                     <div class="problem-type">Math | Recursion</div>
