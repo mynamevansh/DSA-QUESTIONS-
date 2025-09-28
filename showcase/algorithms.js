@@ -146,20 +146,26 @@ class PerformanceMonitor {
 
 // Demo Functions for HTML Interface
 function runMajorityElement() {
-    const input = [2, 2, 1, 1, 1, 2, 2];
-    const performance = PerformanceMonitor.measure(
-        'Majority Element',
-        DSAAlgorithms.majorityElement,
-        input
-    );
-    
-    const resultDiv = document.getElementById('majority-result');
-    resultDiv.className = 'result visible';
-    resultDiv.innerHTML = `
-        <strong>Input:</strong> [${input.join(', ')}]<br>
-        <strong>Output:</strong> ${performance.result}<br>
-        <strong>Time:</strong> ${performance.executionTime}ms
-    `;
+    try {
+        const input = [2, 2, 1, 1, 1, 2, 2];
+        const performance = PerformanceMonitor.measure(
+            'Majority Element',
+            DSAAlgorithms.majorityElement,
+            input
+        );
+        
+        const resultDiv = document.getElementById('majority-result');
+        if (resultDiv) {
+            resultDiv.className = 'result visible';
+            resultDiv.innerHTML = `
+                <strong>Input:</strong> [${input.join(', ')}]<br>
+                <strong>Output:</strong> ${performance.result}<br>
+                <strong>Time:</strong> ${performance.executionTime}ms
+            `;
+        }
+    } catch (error) {
+        console.error('Error in runMajorityElement:', error);
+    }
 }
 
 function runTrappedRainwater() {
@@ -232,37 +238,49 @@ function runStockProfit() {
 }
 
 function runSortColors() {
-    const input = [2,0,2,1,1,0];
-    const performance = PerformanceMonitor.measure(
-        'Sort Colors',
-        DSAAlgorithms.sortColors,
-        input
-    );
-    
-    const resultDiv = document.getElementById('sortcolors-result');
-    resultDiv.className = 'result visible';
-    resultDiv.innerHTML = `
-        <strong>Input:</strong> [${input.join(', ')}]<br>
-        <strong>Sorted:</strong> [${performance.result.join(', ')}]<br>
-        <strong>Time:</strong> ${performance.executionTime}ms
-    `;
+    try {
+        const input = [2,0,2,1,1,0];
+        const performance = PerformanceMonitor.measure(
+            'Sort Colors',
+            DSAAlgorithms.sortColors,
+            input
+        );
+        
+        const resultDiv = document.getElementById('sortcolors-result');
+        if (resultDiv) {
+            resultDiv.className = 'result visible';
+            resultDiv.innerHTML = `
+                <strong>Input:</strong> [${input.join(', ')}]<br>
+                <strong>Sorted:</strong> [${performance.result.join(', ')}]<br>
+                <strong>Time:</strong> ${performance.executionTime}ms
+            `;
+        }
+    } catch (error) {
+        console.error('Error in runSortColors:', error);
+    }
 }
 
 function runSingleElement() {
-    const input = [4,1,2,1,2];
-    const performance = PerformanceMonitor.measure(
-        'Single Element',
-        DSAAlgorithms.singleNumber,
-        input
-    );
-    
-    const resultDiv = document.getElementById('single-result');
-    resultDiv.className = 'result visible';
-    resultDiv.innerHTML = `
-        <strong>Array:</strong> [${input.join(', ')}]<br>
-        <strong>Unique:</strong> ${performance.result}<br>
-        <strong>Time:</strong> ${performance.executionTime}ms
-    `;
+    try {
+        const input = [4,1,2,1,2];
+        const performance = PerformanceMonitor.measure(
+            'Single Element',
+            DSAAlgorithms.singleNumber,
+            input
+        );
+        
+        const resultDiv = document.getElementById('single-result');
+        if (resultDiv) {
+            resultDiv.className = 'result visible';
+            resultDiv.innerHTML = `
+                <strong>Array:</strong> [${input.join(', ')}]<br>
+                <strong>Unique:</strong> ${performance.result}<br>
+                <strong>Time:</strong> ${performance.executionTime}ms
+            `;
+        }
+    } catch (error) {
+        console.error('Error in runSingleElement:', error);
+    }
 }
 
 function runPowerFunction() {
@@ -332,7 +350,7 @@ function toggleCard(cardId) {
     if (!card.classList.contains('flipped')) {
         const result = document.getElementById(`${cardId}-result`);
         if (result) {
-            result.style.display = 'none';
+            result.classList.remove('visible');
             result.innerHTML = '';
         }
     }
