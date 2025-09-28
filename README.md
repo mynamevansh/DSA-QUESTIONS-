@@ -1,13 +1,6 @@
 # Data Structures & Algorithms## Algorithm Implementations
 
-| Problem | Time Complexity | Space Complexity | Algorithm | Companies |
-|---------|----------------|------------------|-----------|-----------|
-| Majority Element | O(n) | O(1) | Boyer-Moore Voting | Google, Meta |
-| Trapped Rainwater | O(n) | O(1) | Two Pointers | Microsoft, Adobe |
-| Maximum Subarray | O(n) | O(1) | Kadane's Algorithm | Apple, Netflix |
-| Search 2D Matrix | O(m+n) | O(1) | Binary Search | Amazon, Google |
-| Buy/Sell Stocks | O(n) | O(1) | Greedy | Goldman Sachs |
-| Power Function | O(log n) | O(1) | Fast Exponentiation | Adobe, Spotify |al interview preparation repository containing optimized algorithm implementations and interactive demonstrations.
+A professional interview preparation repository containing optimized algorithm implementations and interactive demonstrations.
 
 ## Overview
 
@@ -33,6 +26,7 @@ DSA-QUESTIONS-/
 └── Array2/                  # Advanced array problems
     ├── Maxsubarray.java     # Kadane's algorithm
     ├── Search2dmatrix.java  # Binary search in 2D arrays
+    ├── Sortcolors.java      # Dutch National Flag algorithm
     └── trappedrainwater.java # Two-pointer technique
 ```
 
@@ -41,9 +35,11 @@ DSA-QUESTIONS-/
 | Algorithm | Complexity | Companies | Technique |
 |-----------|------------|-----------|-----------|
 | 🗳️ **Majority Element** | O(n)/O(1) | Google, Facebook | Boyer-Moore Voting |
+| 🎯 **Single Element** | O(n)/O(1) | Microsoft, Apple | XOR Bit Manipulation |
+| 🎨 **Sort Colors** | O(n)/O(1) | Facebook, Google | Dutch National Flag |
 | 💧 **Trapped Rainwater** | O(n)/O(1) | Microsoft, Adobe | Two Pointers |
 | 📈 **Maximum Subarray** | O(n)/O(1) | Apple, Netflix | Kadane's Algorithm |
-| � **Search 2D Matrix** | O(m+n)/O(1) | Amazon, Google | Staircase Search |
+| 🔍 **Search 2D Matrix** | O(m+n)/O(1) | Amazon, Google | Staircase Search |
 | 💰 **Buy/Sell Stocks** | O(n)/O(1) | Goldman Sachs | Greedy Algorithm |
 | 🔢 **Power Function** | O(log n)/O(1) | Adobe, Spotify | Fast Exponentiation |
 

@@ -1,7 +1,7 @@
 //Question link{https://leetcode.com/problems/single-number/description/}
 
-class Solution {
-    public int singleNumber(int[] nums){
+public class SingleElement {
+    public static int singleElement(int nums[]){
         int result = 0;
         for(int i=0;i<nums.length;i++ ){
             result^=nums[i];
@@ -10,7 +10,6 @@ class Solution {
     }
     public static void main(String args[]){
         int nums[]={4,1,2,1,2};
-        Solution sol = new Solution();
-        System.out.println(sol.singleNumber(nums));
+        System.out.println(singleElement(nums));
     }
 }
