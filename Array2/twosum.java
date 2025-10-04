@@ -1,4 +1,4 @@
-//Question link {https://leetcode.com/problems/two-sum/submissions/1790847430/}
+//Question link {https://leetcode.com/problems/two-sum/description/}
 
 package Array2;
 

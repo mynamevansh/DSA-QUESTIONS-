@@ -1,3 +1,6 @@
+//Question link {https://leetcode.com/problems/missing-number/description/}
+
+
 import java.util.HashMap;
 
 public class missingnumber {
