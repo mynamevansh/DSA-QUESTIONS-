@@ -1,34 +1,35 @@
 //Question link{https://leetcode.com/problems/find-missing-and-repeated-values/description/}
 
+import java.util.HashMap;
+
 public class MissingandRepeated {
     public static int[] missingandrepeated(int grid[][]){
-        int n = grid.length;
-        int N = n*n;
-        boolean seen[] = new boolean[N+1];
-        int repeat = -1;
+        HashMap<Integer,Boolean> map = new HashMap<>();
+        int repeated = -1;
         int missing = -1;
-
-        for(int row[]:grid){
-            for(int element:row){
-                if (seen[element]) {
-                    repeat = element;
+        int n = grid.length;
+        for(int[] num : grid){
+            for(int element : num){
+                if (map.containsKey(element)) {
+                    repeated = element;
                 }
                 else{
-                    seen[element]=true;
+                    map.put(element, true);
                 }
             }
         }
-        for(int i=1;i<=N;i++){
-            if(!seen[i]){
-                missing=i;
+        for(int i=1;i<=n*n;i++){
+            if (!map.containsKey(i)) {
+                missing = i;
                 break;
             }
         }
-        return new int[]{repeat,missing};
+        return new int[] {repeated ,missing};
+        
     }
     public static void main (String args[]){
         int grid[][] = {{1,3},
-                        {3,4}};
+                        {2,2}};
         int result[] = missingandrepeated(grid);
         System.out.println("Repeated: " + result[0] + ", Missing: " + result[1]);
     }
