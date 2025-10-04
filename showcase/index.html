@@ -63,6 +63,7 @@
             <h1>🚀 DSA Algorithms Showcase</h1>
             <p>Company Interview Questions - Optimized Solutions</p>
             <p><strong>FAANG • Microsoft • Adobe • Goldman Sachs</strong></p>
+            <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">✨ Now featuring Array3 with Next Permutation algorithm</p>
         </div>
     </header>
 
@@ -250,6 +251,29 @@
                     </div>
                 </div>
                 <div id="power-result" class="result"></div>
+            </div>
+
+            <div class="algorithm-card" onclick="toggleCard('nextperm')">
+                <div class="card-front">
+                    <div class="problem-type">Array | In-Place</div>
+                    <h3>🔄 Next Permutation</h3>
+                    <div class="complexity">
+                        <span class="time">O(n)</span>
+                        <span class="space">O(1)</span>
+                    </div>
+                    <div class="algorithm-name">Lexicographic Ordering</div>
+                    <div class="companies">Facebook • Amazon • Microsoft</div>
+                </div>
+                <div class="card-back" id="nextperm-back">
+                    <div class="back-content">
+                        <h4>Key Concept</h4>
+                        <p>Find pivot, swap with successor, reverse suffix</p>
+                        <h4>Approach</h4>
+                        <p>1. Find rightmost pivot<br>2. Find smallest successor<br>3. Swap & reverse suffix</p>
+                        <button class="demo-btn" onclick="event.stopPropagation(); runNextPermutation()">Demo</button>
+                    </div>
+                </div>
+                <div id="nextperm-result" class="result"></div>
             </div>
         </div>
     </main>

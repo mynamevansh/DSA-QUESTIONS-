@@ -126,6 +126,39 @@ class DSAAlgorithms {
         
         return n < 0 ? 1 / result : result;
     }
+
+    // Next Permutation - In-place lexicographic ordering
+    static nextPermutation(nums) {
+        const result = [...nums]; // Copy for visualization
+        const n = result.length;
+        let pivot = -1;
+        
+        // Find rightmost pivot
+        for(let i = n - 2; i >= 0; i--) {
+            if(result[i] < result[i + 1]) {
+                pivot = i;
+                break;
+            }
+        }
+        
+        // If no pivot, array is in descending order
+        if(pivot === -1) {
+            result.reverse();
+            return result;
+        }
+        
+        // Find smallest element greater than pivot
+        for(let i = n - 1; i > pivot; i--) {
+            if(result[pivot] < result[i]) {
+                [result[pivot], result[i]] = [result[i], result[pivot]];
+                break;
+            }
+        }
+        
+        // Reverse suffix
+        const suffix = result.slice(pivot + 1).reverse();
+        return [...result.slice(0, pivot + 1), ...suffix];
+    }
 }
 
 // Performance Monitor Class
@@ -299,6 +332,29 @@ function runPowerFunction() {
         <strong>Result:</strong> ${performance.result}<br>
         <strong>Time:</strong> ${performance.executionTime}ms
     `;
+}
+
+function runNextPermutation() {
+    try {
+        const input = [1, 2, 3];
+        const performance = PerformanceMonitor.measure(
+            'Next Permutation',
+            DSAAlgorithms.nextPermutation,
+            input
+        );
+        
+        const resultDiv = document.getElementById('nextperm-result');
+        if (resultDiv) {
+            resultDiv.className = 'result visible';
+            resultDiv.innerHTML = `
+                <strong>Input:</strong> [${input.join(', ')}]<br>
+                <strong>Next:</strong> [${performance.result.join(', ')}]<br>
+                <strong>Time:</strong> ${performance.executionTime}ms
+            `;
+        }
+    } catch (error) {
+        console.error('Error in runNextPermutation:', error);
+    }
 }
 
 // Performance logging and monitoring

@@ -23,11 +23,13 @@ DSA-QUESTIONS-/
 │   ├── MissingandRepeated.java
 │   ├── SingleElement.java   # Find unique element
 │   └── pow.java            # Fast exponentiation
-└── Array2/                  # Advanced array problems
-    ├── Maxsubarray.java     # Kadane's algorithm
-    ├── Search2dmatrix.java  # Binary search in 2D arrays
-    ├── Sortcolors.java      # Dutch National Flag algorithm
-    └── trappedrainwater.java # Two-pointer technique
+├── Array2/                  # Advanced array problems
+│   ├── Maxsubarray.java     # Kadane's algorithm
+│   ├── Search2dmatrix.java  # Binary search in 2D arrays
+│   ├── Sortcolors.java      # Dutch National Flag algorithm
+│   └── trappedrainwater.java # Two-pointer technique
+└── Array3/                  # Expert-level array algorithms
+    └── nextpermutation.java # Next lexicographic permutation
 ```
 
 ## Algorithm Implementations
@@ -42,6 +44,7 @@ DSA-QUESTIONS-/
 | 🔍 **Search 2D Matrix** | O(m+n)/O(1) | Amazon, Google | Staircase Search |
 | 💰 **Buy/Sell Stocks** | O(n)/O(1) | Goldman Sachs | Greedy Algorithm |
 | 🔢 **Power Function** | O(log n)/O(1) | Adobe, Spotify | Fast Exponentiation |
+| 🔄 **Next Permutation** | O(n)/O(1) | Facebook, Amazon | In-place Rearrangement |
 
 ## Technical Skills Demonstrated
 
@@ -66,9 +69,9 @@ open showcase/index.html
 
 **Run Java Implementations:**
 ```bash
-cd Array1
-javac MajorityElement.java
-java MajorityElement
+cd Array3
+javac nextpermutation.java
+java nextpermutation
 ```
 
 ## Features
