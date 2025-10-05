@@ -1,8 +1,4 @@
-// DSA Algorithms - JavaScript Implementation
-// Performance optimized with monitoring
-
 class DSAAlgorithms {
-    // Boyer-Moore Majority Vote Algorithm
     static majorityElement(nums) {
         let candidate = nums[0];
         let count = 1;
@@ -21,7 +17,6 @@ class DSAAlgorithms {
         return candidate;
     }
 
-    // Trapped Rainwater - Two Pointer Approach
     static trappedRainwater(height) {
         let left = 0, right = height.length - 1;
         let leftMax = 0, rightMax = 0;
@@ -41,7 +36,6 @@ class DSAAlgorithms {
         return water;
     }
 
-    // Kadane's Algorithm - Maximum Subarray
     static maxSubarray(nums) {
         let maxSum = nums[0];
         let currentSum = nums[0];
@@ -53,7 +47,6 @@ class DSAAlgorithms {
         return maxSum;
     }
 
-    // Search in 2D Matrix
     static search2DMatrix(matrix, target) {
         if(!matrix.length || !matrix[0].length) return false;
         
@@ -68,7 +61,6 @@ class DSAAlgorithms {
         return false;
     }
 
-    // Buy/Sell Stocks - Single Pass
     static maxProfit(prices) {
         let minPrice = prices[0];
         let maxProfit = 0;
@@ -80,10 +72,9 @@ class DSAAlgorithms {
         return maxProfit;
     }
 
-    // Sort Colors - Dutch National Flag Algorithm
     static sortColors(nums) {
         let lower = 0, mid = 0, high = nums.length - 1;
-        const result = [...nums]; // Copy for visualization
+        const result = [...nums];
         
         while(mid <= high) {
             if(result[mid] === 0) {
@@ -100,16 +91,14 @@ class DSAAlgorithms {
         return result;
     }
 
-    // Single Element - XOR Bit Manipulation
     static singleNumber(nums) {
         let result = 0;
         for(let num of nums) {
-            result ^= num; // XOR cancels duplicates
+            result ^= num;
         }
         return result;
     }
 
-    // Power Function with Negative Handling
     static myPow(x, n) {
         if(n === 0) return 1;
         
@@ -127,13 +116,11 @@ class DSAAlgorithms {
         return n < 0 ? 1 / result : result;
     }
 
-    // Next Permutation - In-place lexicographic ordering
     static nextPermutation(nums) {
-        const result = [...nums]; // Copy for visualization
+        const result = [...nums];
         const n = result.length;
         let pivot = -1;
         
-        // Find rightmost pivot
         for(let i = n - 2; i >= 0; i--) {
             if(result[i] < result[i + 1]) {
                 pivot = i;
@@ -141,13 +128,11 @@ class DSAAlgorithms {
             }
         }
         
-        // If no pivot, array is in descending order
         if(pivot === -1) {
             result.reverse();
             return result;
         }
         
-        // Find smallest element greater than pivot
         for(let i = n - 1; i > pivot; i--) {
             if(result[pivot] < result[i]) {
                 [result[pivot], result[i]] = [result[i], result[pivot]];
@@ -155,16 +140,13 @@ class DSAAlgorithms {
             }
         }
         
-        // Reverse suffix
         const suffix = result.slice(pivot + 1).reverse();
         return [...result.slice(0, pivot + 1), ...suffix];
     }
 
-    // Merge Overlapping Intervals - Sorting + Greedy
     static mergeIntervals(intervals) {
         if (!intervals.length) return [];
         
-        // Sort intervals by start time
         intervals.sort((a, b) => a[0] - b[0]);
         const merged = [intervals[0]];
         
@@ -172,12 +154,9 @@ class DSAAlgorithms {
             const current = intervals[i];
             const lastMerged = merged[merged.length - 1];
             
-            // Check if current interval overlaps with last merged
             if (current[0] <= lastMerged[1]) {
-                // Merge intervals
                 lastMerged[1] = Math.max(lastMerged[1], current[1]);
             } else {
-                // No overlap, add current interval
                 merged.push(current);
             }
         }
@@ -185,7 +164,6 @@ class DSAAlgorithms {
         return merged;
     }
 
-    // Longest Substring Without Repeating Characters - Sliding Window
     static longestSubstring(s) {
         const charSet = new Set();
         let left = 0, right = 0, maxLength = 0;
@@ -193,13 +171,11 @@ class DSAAlgorithms {
         while (right < s.length) {
             const char = s[right];
             
-            // Shrink window from left while duplicate exists
             while (charSet.has(char)) {
                 charSet.delete(s[left]);
                 left++;
             }
             
-            // Add current character and update max length
             charSet.add(char);
             maxLength = Math.max(maxLength, right - left + 1);
             right++;
@@ -209,7 +185,6 @@ class DSAAlgorithms {
     }
 }
 
-// Performance Monitor Class
 class PerformanceMonitor {
     static measure(algorithmName, fn, input) {
         const startTime = performance.now();
@@ -224,8 +199,6 @@ class PerformanceMonitor {
         };
     }
 }
-
-// Demo Functions for HTML Interface
 function runMajorityElement() {
     try {
         const input = [2, 2, 1, 1, 1, 2, 2];
@@ -453,15 +426,12 @@ function runLongestSubstring() {
     }
 }
 
-// Performance logging and monitoring
 console.log('🚀 DSA Algorithms loaded successfully!');
 console.log('📊 Performance monitoring enabled');
 
-// Web Performance Monitoring
 class WebPerformanceMonitor {
     static logPageLoadMetrics() {
         window.addEventListener('load', function() {
-            // Wait for all resources to load
             setTimeout(() => {
                 const perfData = performance.getEntriesByType('navigation')[0];
                 const paintEntries = performance.getEntriesByType('paint');
@@ -483,17 +453,13 @@ class WebPerformanceMonitor {
                 });
                 console.groupEnd();
                 
-                // Store metrics for Lighthouse comparison
                 window.performanceMetrics = metrics;
             }, 0);
         });
     }
 }
 
-// Initialize performance monitoring
 WebPerformanceMonitor.logPageLoadMetrics();
-
-// Card flip functionality for interactive flashcards
 function toggleCard(cardId) {
     const card = document.querySelector(`#${cardId}-back`).parentElement;
     card.classList.toggle('flipped');
