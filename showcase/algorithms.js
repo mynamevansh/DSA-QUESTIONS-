@@ -159,6 +159,54 @@ class DSAAlgorithms {
         const suffix = result.slice(pivot + 1).reverse();
         return [...result.slice(0, pivot + 1), ...suffix];
     }
+
+    // Merge Overlapping Intervals - Sorting + Greedy
+    static mergeIntervals(intervals) {
+        if (!intervals.length) return [];
+        
+        // Sort intervals by start time
+        intervals.sort((a, b) => a[0] - b[0]);
+        const merged = [intervals[0]];
+        
+        for (let i = 1; i < intervals.length; i++) {
+            const current = intervals[i];
+            const lastMerged = merged[merged.length - 1];
+            
+            // Check if current interval overlaps with last merged
+            if (current[0] <= lastMerged[1]) {
+                // Merge intervals
+                lastMerged[1] = Math.max(lastMerged[1], current[1]);
+            } else {
+                // No overlap, add current interval
+                merged.push(current);
+            }
+        }
+        
+        return merged;
+    }
+
+    // Longest Substring Without Repeating Characters - Sliding Window
+    static longestSubstring(s) {
+        const charSet = new Set();
+        let left = 0, right = 0, maxLength = 0;
+        
+        while (right < s.length) {
+            const char = s[right];
+            
+            // Shrink window from left while duplicate exists
+            while (charSet.has(char)) {
+                charSet.delete(s[left]);
+                left++;
+            }
+            
+            // Add current character and update max length
+            charSet.add(char);
+            maxLength = Math.max(maxLength, right - left + 1);
+            right++;
+        }
+        
+        return maxLength;
+    }
 }
 
 // Performance Monitor Class
@@ -354,6 +402,54 @@ function runNextPermutation() {
         }
     } catch (error) {
         console.error('Error in runNextPermutation:', error);
+    }
+}
+
+function runMergeIntervals() {
+    try {
+        const input = [[1,3],[2,6],[8,10],[15,18]];
+        const performance = PerformanceMonitor.measure(
+            'Merge Intervals',
+            DSAAlgorithms.mergeIntervals,
+            input
+        );
+        
+        const resultDiv = document.getElementById('mergeintervals-result');
+        if (resultDiv) {
+            resultDiv.className = 'result visible';
+            const inputStr = input.map(arr => `[${arr.join(',')}]`).join(',');
+            const outputStr = performance.result.map(arr => `[${arr.join(',')}]`).join(',');
+            resultDiv.innerHTML = `
+                <strong>Input:</strong> [${inputStr}]<br>
+                <strong>Merged:</strong> [${outputStr}]<br>
+                <strong>Time:</strong> ${performance.executionTime}ms
+            `;
+        }
+    } catch (error) {
+        console.error('Error in runMergeIntervals:', error);
+    }
+}
+
+function runLongestSubstring() {
+    try {
+        const input = "abcabcbb";
+        const performance = PerformanceMonitor.measure(
+            'Longest Substring',
+            DSAAlgorithms.longestSubstring,
+            input
+        );
+        
+        const resultDiv = document.getElementById('longestsubstr-result');
+        if (resultDiv) {
+            resultDiv.className = 'result visible';
+            resultDiv.innerHTML = `
+                <strong>String:</strong> "${input}"<br>
+                <strong>Length:</strong> ${performance.result}<br>
+                <strong>Time:</strong> ${performance.executionTime}ms
+            `;
+        }
+    } catch (error) {
+        console.error('Error in runLongestSubstring:', error);
     }
 }
 

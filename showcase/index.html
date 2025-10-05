@@ -63,7 +63,7 @@
             <h1>🚀 DSA Algorithms Showcase</h1>
             <p>Company Interview Questions - Optimized Solutions</p>
             <p><strong>FAANG • Microsoft • Adobe • Goldman Sachs</strong></p>
-            <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">✨ Now featuring Array3 with Next Permutation algorithm</p>
+            <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">✨ Array3: Next Permutation, Merge Intervals & Longest Substring</p>
         </div>
     </header>
 
@@ -274,6 +274,52 @@
                     </div>
                 </div>
                 <div id="nextperm-result" class="result"></div>
+            </div>
+
+            <div class="algorithm-card" onclick="toggleCard('mergeintervals')">
+                <div class="card-front">
+                    <div class="problem-type">Array | Sorting</div>
+                    <h3>📊 Merge Intervals</h3>
+                    <div class="complexity">
+                        <span class="time">O(n log n)</span>
+                        <span class="space">O(n)</span>
+                    </div>
+                    <div class="algorithm-name">Sorting + Greedy</div>
+                    <div class="companies">Facebook • Google • LinkedIn</div>
+                </div>
+                <div class="card-back" id="mergeintervals-back">
+                    <div class="back-content">
+                        <h4>Key Concept</h4>
+                        <p>Sort by start time, merge overlapping intervals</p>
+                        <h4>Approach</h4>
+                        <p>1. Sort intervals by start<br>2. Check overlap with previous<br>3. Merge or add to result</p>
+                        <button class="demo-btn" onclick="event.stopPropagation(); runMergeIntervals()">Demo</button>
+                    </div>
+                </div>
+                <div id="mergeintervals-result" class="result"></div>
+            </div>
+
+            <div class="algorithm-card" onclick="toggleCard('longestsubstr')">
+                <div class="card-front">
+                    <div class="problem-type">String | Sliding Window</div>
+                    <h3>🪟 Longest Substring</h3>
+                    <div class="complexity">
+                        <span class="time">O(n)</span>
+                        <span class="space">O(min(m,n))</span>
+                    </div>
+                    <div class="algorithm-name">Sliding Window</div>
+                    <div class="companies">Amazon • Microsoft • Facebook</div>
+                </div>
+                <div class="card-back" id="longestsubstr-back">
+                    <div class="back-content">
+                        <h4>Key Concept</h4>
+                        <p>Two pointers with HashSet for duplicate tracking</p>
+                        <h4>Approach</h4>
+                        <p>1. Expand right pointer<br>2. Shrink left when duplicate<br>3. Track maximum window</p>
+                        <button class="demo-btn" onclick="event.stopPropagation(); runLongestSubstring()">Demo</button>
+                    </div>
+                </div>
+                <div id="longestsubstr-result" class="result"></div>
             </div>
         </div>
     </main>

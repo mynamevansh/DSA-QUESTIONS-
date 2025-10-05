@@ -29,7 +29,9 @@ DSA-QUESTIONS-/
 │   ├── Sortcolors.java      # Dutch National Flag algorithm
 │   └── trappedrainwater.java # Two-pointer technique
 └── Array3/                  # Expert-level array algorithms
-    └── nextpermutation.java # Next lexicographic permutation
+    ├── nextpermutation.java # Next lexicographic permutation
+    ├── mergeoverlap.java    # Merge overlapping intervals
+    └── longestsubstring.java # Longest substring without repeating chars
 ```
 
 ## Algorithm Implementations
@@ -45,6 +47,8 @@ DSA-QUESTIONS-/
 | 💰 **Buy/Sell Stocks** | O(n)/O(1) | Goldman Sachs | Greedy Algorithm |
 | 🔢 **Power Function** | O(log n)/O(1) | Adobe, Spotify | Fast Exponentiation |
 | 🔄 **Next Permutation** | O(n)/O(1) | Facebook, Amazon | In-place Rearrangement |
+| 📊 **Merge Intervals** | O(n log n)/O(n) | Facebook, Google | Sorting + Greedy |
+| 🪟 **Longest Substring** | O(n)/O(min(m,n)) | Amazon, Microsoft | Sliding Window |
 
 ## Technical Skills Demonstrated
 
@@ -70,8 +74,8 @@ open showcase/index.html
 **Run Java Implementations:**
 ```bash
 cd Array3
-javac nextpermutation.java
-java nextpermutation
+javac longestsubstring.java
+java longestsubstring
 ```
 
 ## Features
