@@ -63,7 +63,7 @@
             <h1>🚀 DSA Algorithms Showcase</h1>
             <p>Company Interview Questions - Optimized Solutions</p>
             <p><strong>FAANG • Microsoft • Adobe • Goldman Sachs</strong></p>
-            <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">✨ Array3: Next Permutation, Merge Intervals & Longest Substring</p>
+            <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">✨ Array3: Next Permutation, Merge Intervals, Longest Substring & Set Matrix Zeroes</p>
         </div>
     </header>
 
@@ -320,6 +320,29 @@
                     </div>
                 </div>
                 <div id="longestsubstr-result" class="result"></div>
+            </div>
+
+            <div class="algorithm-card" onclick="toggleCard('setmatrix')">
+                <div class="card-front">
+                    <div class="problem-type">Matrix | In-Place</div>
+                    <h3>⚪ Set Matrix Zeroes</h3>
+                    <div class="complexity">
+                        <span class="time">O(m×n)</span>
+                        <span class="space">O(1)</span>
+                    </div>
+                    <div class="algorithm-name">In-Place Flag Technique</div>
+                    <div class="companies">Microsoft • Apple • Google</div>
+                </div>
+                <div class="card-back" id="setmatrix-back">
+                    <div class="back-content">
+                        <h4>Key Concept</h4>
+                        <p>Use first row and column as flags to mark zeros</p>
+                        <h4>Approach</h4>
+                        <p>1. Check first row/col for zeros<br>2. Use them to mark zero positions<br>3. Set zeros based on flags</p>
+                        <button class="demo-btn" onclick="event.stopPropagation(); runSetMatrixZeroes()">Demo</button>
+                    </div>
+                </div>
+                <div id="setmatrix-result" class="result"></div>
             </div>
         </div>
     </main>

@@ -31,7 +31,8 @@ DSA-QUESTIONS-/
 └── Array3/                  # Expert-level array algorithms
     ├── nextpermutation.java # Next lexicographic permutation
     ├── mergeoverlap.java    # Merge overlapping intervals
-    └── longestsubstring.java # Longest substring without repeating chars
+    ├── longestsubstring.java # Longest substring without repeating chars
+    └── setmatrixzero.java   # Set matrix zeroes in-place
 ```
 
 ## Algorithm Implementations
@@ -49,6 +50,7 @@ DSA-QUESTIONS-/
 | 🔄 **Next Permutation** | O(n)/O(1) | Facebook, Amazon | In-place Rearrangement |
 | 📊 **Merge Intervals** | O(n log n)/O(n) | Facebook, Google | Sorting + Greedy |
 | 🪟 **Longest Substring** | O(n)/O(min(m,n)) | Amazon, Microsoft | Sliding Window |
+| ⚪ **Set Matrix Zeroes** | O(m×n)/O(1) | Microsoft, Apple | In-place Flag Technique |
 
 ## Technical Skills Demonstrated
 

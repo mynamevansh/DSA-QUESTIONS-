@@ -183,6 +183,64 @@ class DSAAlgorithms {
         
         return maxLength;
     }
+
+    static setMatrixZeroes(matrix) {
+        const rows = matrix.length;
+        const cols = matrix[0].length;
+        let firstRowZero = false;
+        let firstColZero = false;
+        
+        // Check if first row has any zeros
+        for (let j = 0; j < cols; j++) {
+            if (matrix[0][j] === 0) {
+                firstRowZero = true;
+                break;
+            }
+        }
+        
+        // Check if first column has any zeros
+        for (let i = 0; i < rows; i++) {
+            if (matrix[i][0] === 0) {
+                firstColZero = true;
+                break;
+            }
+        }
+        
+        // Use first row and column as flags
+        for (let i = 1; i < rows; i++) {
+            for (let j = 1; j < cols; j++) {
+                if (matrix[i][j] === 0) {
+                    matrix[i][0] = 0;
+                    matrix[0][j] = 0;
+                }
+            }
+        }
+        
+        // Set zeros based on flags
+        for (let i = 1; i < rows; i++) {
+            for (let j = 1; j < cols; j++) {
+                if (matrix[i][0] === 0 || matrix[0][j] === 0) {
+                    matrix[i][j] = 0;
+                }
+            }
+        }
+        
+        // Handle first row
+        if (firstRowZero) {
+            for (let j = 0; j < cols; j++) {
+                matrix[0][j] = 0;
+            }
+        }
+        
+        // Handle first column
+        if (firstColZero) {
+            for (let i = 0; i < rows; i++) {
+                matrix[i][0] = 0;
+            }
+        }
+        
+        return matrix;
+    }
 }
 
 class PerformanceMonitor {
@@ -423,6 +481,32 @@ function runLongestSubstring() {
         }
     } catch (error) {
         console.error('Error in runLongestSubstring:', error);
+    }
+}
+
+function runSetMatrixZeroes() {
+    try {
+        const input = [[1,1,1],[1,0,1],[1,1,1]];
+        const inputCopy = input.map(row => [...row]);
+        const performance = PerformanceMonitor.measure(
+            'Set Matrix Zeroes',
+            DSAAlgorithms.setMatrixZeroes,
+            inputCopy
+        );
+        
+        const resultDiv = document.getElementById('setmatrix-result');
+        if (resultDiv) {
+            resultDiv.className = 'result visible';
+            const inputStr = input.map(row => `[${row.join(',')}]`).join(',');
+            const outputStr = performance.result.map(row => `[${row.join(',')}]`).join(',');
+            resultDiv.innerHTML = `
+                <strong>Input:</strong> [${inputStr}]<br>
+                <strong>Output:</strong> [${outputStr}]<br>
+                <strong>Time:</strong> ${performance.executionTime}ms
+            `;
+        }
+    } catch (error) {
+        console.error('Error in runSetMatrixZeroes:', error);
     }
 }
 
