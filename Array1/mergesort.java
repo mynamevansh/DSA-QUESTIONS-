@@ -13,7 +13,7 @@ public class mergesort {
                 merged[x++] = arr[idx2++];
             }
             
-        }
+        } 
         while (idx1<=mid) {
             merged[x++] = arr[idx1++];
         }
