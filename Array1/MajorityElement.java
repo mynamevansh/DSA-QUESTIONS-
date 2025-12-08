@@ -19,3 +19,13 @@ public class MajorityElement {
         System.out.println("Majority Element is:"+majorityElement(nums));
     }
 }
+
+//better approach
+/*
+HashMap <Integer,Integer> map = new HashMap<>();
+for(int num:nums){
+    map.put(num,map.get(num,0)+1)}
+    if(map.get(num)>nums.length/2){
+    return num}
+
+*/
