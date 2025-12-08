@@ -63,7 +63,7 @@
             <h1>🚀 DSA Algorithms Showcase</h1>
             <p>Company Interview Questions - Optimized Solutions</p>
             <p><strong>FAANG • Microsoft • Adobe • Goldman Sachs</strong></p>
-            <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">✨ Array3: Next Permutation, Merge Intervals, Longest Substring & Set Matrix Zeroes</p>
+            <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">✨ Complete Collection: Two Sum, Three Sum, Four Sum & More!</p>
         </div>
     </header>
 
@@ -90,6 +90,75 @@
                     </div>
                 </div>
                 <div id="majority-result" class="result"></div>
+            </div>
+
+            <div class="algorithm-card" onclick="toggleCard('twosum')">
+                <div class="card-front">
+                    <div class="problem-type">Array | HashMap</div>
+                    <h3>➕ Two Sum</h3>
+                    <div class="complexity">
+                        <span class="time">O(n)</span>
+                        <span class="space">O(n)</span>
+                    </div>
+                    <div class="algorithm-name">HashMap Lookup</div>
+                    <div class="companies">Google • Amazon • Facebook</div>
+                </div>
+                <div class="card-back" id="twosum-back">
+                    <div class="back-content">
+                        <h4>Key Concept</h4>
+                        <p>Store complements in HashMap for O(1) lookup</p>
+                        <h4>Approach</h4>
+                        <p>1. For each number, calculate complement<br>2. Check if complement exists in map<br>3. Store current number with index</p>
+                        <button class="demo-btn" onclick="event.stopPropagation(); runTwoSum()">Demo</button>
+                    </div>
+                </div>
+                <div id="twosum-result" class="result"></div>
+            </div>
+
+            <div class="algorithm-card" onclick="toggleCard('threesum')">
+                <div class="card-front">
+                    <div class="problem-type">Array | Two Pointers</div>
+                    <h3>3️⃣ Three Sum</h3>
+                    <div class="complexity">
+                        <span class="time">O(n²)</span>
+                        <span class="space">O(1)</span>
+                    </div>
+                    <div class="algorithm-name">Sorted Two Pointers</div>
+                    <div class="companies">Facebook • Amazon • Microsoft</div>
+                </div>
+                <div class="card-back" id="threesum-back">
+                    <div class="back-content">
+                        <h4>Key Concept</h4>
+                        <p>Sort array, fix one element, use two pointers for rest</p>
+                        <h4>Approach</h4>
+                        <p>1. Sort the array first<br>2. Fix one element, find pair<br>3. Skip duplicates for unique triplets</p>
+                        <button class="demo-btn" onclick="event.stopPropagation(); runThreeSum()">Demo</button>
+                    </div>
+                </div>
+                <div id="threesum-result" class="result"></div>
+            </div>
+
+            <div class="algorithm-card" onclick="toggleCard('foursum')">
+                <div class="card-front">
+                    <div class="problem-type">Array | Two Pointers</div>
+                    <h3>4️⃣ Four Sum</h3>
+                    <div class="complexity">
+                        <span class="time">O(n³)</span>
+                        <span class="space">O(1)</span>
+                    </div>
+                    <div class="algorithm-name">Nested Two Pointers</div>
+                    <div class="companies">Amazon • Google • Microsoft</div>
+                </div>
+                <div class="card-back" id="foursum-back">
+                    <div class="back-content">
+                        <h4>Key Concept</h4>
+                        <p>Fix two elements, use two pointers for remaining pair</p>
+                        <h4>Approach</h4>
+                        <p>1. Sort array<br>2. Fix first two elements<br>3. Two pointers for last two</p>
+                        <button class="demo-btn" onclick="event.stopPropagation(); runFourSum()">Demo</button>
+                    </div>
+                </div>
+                <div id="foursum-result" class="result"></div>
             </div>
 
             <div class="algorithm-card" onclick="toggleCard('rainwater')">

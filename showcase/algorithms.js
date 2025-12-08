@@ -1,4 +1,82 @@
 class DSAAlgorithms {
+    static twoSum(nums, target) {
+        const map = new Map();
+        for (let i = 0; i < nums.length; i++) {
+            const complement = target - nums[i];
+            if (map.has(complement)) {
+                return [map.get(complement), i];
+            }
+            map.set(nums[i], i);
+        }
+        return [];
+    }
+
+    static threeSum(nums) {
+        const result = [];
+        nums.sort((a, b) => a - b);
+        
+        for (let i = 0; i < nums.length - 2; i++) {
+            if (i > 0 && nums[i] === nums[i - 1]) continue;
+            
+            let left = i + 1;
+            let right = nums.length - 1;
+            
+            while (left < right) {
+                const sum = nums[i] + nums[left] + nums[right];
+                
+                if (sum === 0) {
+                    result.push([nums[i], nums[left], nums[right]]);
+                    
+                    while (left < right && nums[left] === nums[left + 1]) left++;
+                    while (left < right && nums[right] === nums[right - 1]) right--;
+                    
+                    left++;
+                    right--;
+                } else if (sum < 0) {
+                    left++;
+                } else {
+                    right--;
+                }
+            }
+        }
+        return result;
+    }
+
+    static fourSum(nums, target) {
+        const result = [];
+        nums.sort((a, b) => a - b);
+        
+        for (let i = 0; i < nums.length - 3; i++) {
+            if (i > 0 && nums[i] === nums[i - 1]) continue;
+            
+            for (let j = i + 1; j < nums.length - 2; j++) {
+                if (j > i + 1 && nums[j] === nums[j - 1]) continue;
+                
+                let left = j + 1;
+                let right = nums.length - 1;
+                
+                while (left < right) {
+                    const sum = nums[i] + nums[j] + nums[left] + nums[right];
+                    
+                    if (sum === target) {
+                        result.push([nums[i], nums[j], nums[left], nums[right]]);
+                        
+                        while (left < right && nums[left] === nums[left + 1]) left++;
+                        while (left < right && nums[right] === nums[right - 1]) right--;
+                        
+                        left++;
+                        right--;
+                    } else if (sum < target) {
+                        left++;
+                    } else {
+                        right--;
+                    }
+                }
+            }
+        }
+        return result;
+    }
+
     static majorityElement(nums) {
         let candidate = nums[0];
         let count = 1;
@@ -257,6 +335,82 @@ class PerformanceMonitor {
         };
     }
 }
+
+function runTwoSum() {
+    try {
+        const nums = [2, 7, 11, 15];
+        const target = 9;
+        const performance = PerformanceMonitor.measure(
+            'Two Sum',
+            (data) => DSAAlgorithms.twoSum(data.nums, data.target),
+            { nums, target }
+        );
+        
+        const resultDiv = document.getElementById('twosum-result');
+        if (resultDiv) {
+            resultDiv.className = 'result visible';
+            resultDiv.innerHTML = `
+                <strong>Array:</strong> [${nums.join(', ')}]<br>
+                <strong>Target:</strong> ${target}<br>
+                <strong>Indices:</strong> [${performance.result.join(', ')}]<br>
+                <strong>Time:</strong> ${performance.executionTime}ms
+            `;
+        }
+    } catch (error) {
+        console.error('Error in runTwoSum:', error);
+    }
+}
+
+function runThreeSum() {
+    try {
+        const input = [-1, 0, 1, 2, -1, -4];
+        const performance = PerformanceMonitor.measure(
+            'Three Sum',
+            DSAAlgorithms.threeSum,
+            input
+        );
+        
+        const resultDiv = document.getElementById('threesum-result');
+        if (resultDiv) {
+            resultDiv.className = 'result visible';
+            const outputStr = performance.result.map(arr => `[${arr.join(',')}]`).join(', ');
+            resultDiv.innerHTML = `
+                <strong>Array:</strong> [${input.join(', ')}]<br>
+                <strong>Triplets:</strong> [${outputStr}]<br>
+                <strong>Time:</strong> ${performance.executionTime}ms
+            `;
+        }
+    } catch (error) {
+        console.error('Error in runThreeSum:', error);
+    }
+}
+
+function runFourSum() {
+    try {
+        const nums = [1, 0, -1, 0, -2, 2];
+        const target = 0;
+        const performance = PerformanceMonitor.measure(
+            'Four Sum',
+            (data) => DSAAlgorithms.fourSum(data.nums, data.target),
+            { nums, target }
+        );
+        
+        const resultDiv = document.getElementById('foursum-result');
+        if (resultDiv) {
+            resultDiv.className = 'result visible';
+            const outputStr = performance.result.map(arr => `[${arr.join(',')}]`).join(', ');
+            resultDiv.innerHTML = `
+                <strong>Array:</strong> [${nums.join(', ')}]<br>
+                <strong>Target:</strong> ${target}<br>
+                <strong>Quadruplets:</strong> [${outputStr}]<br>
+                <strong>Time:</strong> ${performance.executionTime}ms
+            `;
+        }
+    } catch (error) {
+        console.error('Error in runFourSum:', error);
+    }
+}
+
 function runMajorityElement() {
     try {
         const input = [2, 2, 1, 1, 1, 2, 2];
