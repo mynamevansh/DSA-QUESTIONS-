@@ -6,8 +6,9 @@ public class mergetwosort {
         int ind = nums1.length-1;
         while (m>0 && n>0) {
             if (nums1[m-1]>=nums2[n-1]) {
-                nums1[ind--]=nums1[m-1];
+                nums1[ind]=nums1[m-1];
                 m--;
+                ind--;
             }
             else{
                 nums1[ind--]=nums2[n-1];
@@ -25,5 +26,12 @@ public class mergetwosort {
         int m = 3;
         int n = 3;
         merge(nums1,m,nums2,n);
+        
+        
+        System.out.print("Merged array: ");
+        for(int i = 0; i < nums1.length; i++) {
+            System.out.print(nums1[i] + " ");
+        }
+        System.out.println();
     }
 }
