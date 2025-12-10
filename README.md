@@ -4,9 +4,16 @@ A professional interview preparation repository containing optimized algorithm i
 
 ## Overview
 
-This repository contains solutions to frequently asked interview questions from top technology companies including FAANG, Microsoft, Goldman Sachs, and other leading firms.
+This repository contains **18 optimized algorithm implementations** for frequently asked interview questions from top technology companies including FAANG, Microsoft, Goldman Sachs, and other leading firms.
 
-**Interactive Demo:** [showcase/index.html](./showcase/index.html) - Algorithm visualizations with performance monitoring
+**✨ Interactive Demo:** [showcase/index.html](./showcase/index.html) - Live algorithm visualizations with real-time performance monitoring
+
+**🚀 Features:**
+- Interactive flip cards with algorithm approaches
+- Live demos with sample inputs
+- Real-time execution time tracking
+- Company tags for each problem
+- Complexity analysis for every algorithm
 
 ## Repository Structure
 
@@ -20,10 +27,15 @@ DSA-QUESTIONS-/
 │   ├── MajorityElement.java # Boyer-Moore voting algorithm
 │   ├── buySellStocks.java   # Stock trading optimization
 │   ├── mergesort.java       # Merge sort implementation
-│   ├── MissingandRepeated.java
+│   ├── mergetwosort.java    # Merge two sorted arrays
+│   ├── missingnumber.java   # Find missing number
+│   ├── MissingandRepeated.java # Find missing and repeated values
 │   ├── SingleElement.java   # Find unique element
 │   └── pow.java            # Fast exponentiation
 ├── Array2/                  # Advanced array problems
+│   ├── twosum.java          # HashMap approach for two sum
+│   ├── threesum.java        # Two-pointer technique for three sum
+│   ├── foursum.java         # Nested two-pointers for four sum
 │   ├── Maxsubarray.java     # Kadane's algorithm
 │   ├── Search2dmatrix.java  # Binary search in 2D arrays
 │   ├── Sortcolors.java      # Dutch National Flag algorithm
@@ -37,10 +49,17 @@ DSA-QUESTIONS-/
 
 ## Algorithm Implementations
 
+### 18 Optimized Algorithms
+
 | Algorithm | Complexity | Companies | Technique |
 |-----------|------------|-----------|-----------|
+| ➕ **Two Sum** | O(n)/O(n) | Google, Amazon, Facebook | HashMap Lookup |
+| 3️⃣ **Three Sum** | O(n²)/O(1) | Facebook, Amazon, Microsoft | Sorted Two Pointers |
+| 4️⃣ **Four Sum** | O(n³)/O(1) | Amazon, Google, Microsoft | Nested Two Pointers |
 | 🗳️ **Majority Element** | O(n)/O(1) | Google, Facebook | Boyer-Moore Voting |
 | 🎯 **Single Element** | O(n)/O(1) | Microsoft, Apple | XOR Bit Manipulation |
+| 🔢 **Missing Number** | O(n)/O(1) | Amazon, Microsoft, Facebook | Sum Formula |
+| 🔄 **Missing & Repeated** | O(n²)/O(n²) | Google, Microsoft, Amazon | HashMap Tracking |
 | 🎨 **Sort Colors** | O(n)/O(1) | Facebook, Google | Dutch National Flag |
 | 💧 **Trapped Rainwater** | O(n)/O(1) | Microsoft, Adobe | Two Pointers |
 | 📈 **Maximum Subarray** | O(n)/O(1) | Apple, Netflix | Kadane's Algorithm |
@@ -51,6 +70,7 @@ DSA-QUESTIONS-/
 | 📊 **Merge Intervals** | O(n log n)/O(n) | Facebook, Google | Sorting + Greedy |
 | 🪟 **Longest Substring** | O(n)/O(min(m,n)) | Amazon, Microsoft | Sliding Window |
 | ⚪ **Set Matrix Zeroes** | O(m×n)/O(1) | Microsoft, Apple | In-place Flag Technique |
+| 🔀 **Merge Two Sorted Arrays** | O(m+n)/O(1) | Facebook, Microsoft | Two Pointers |
 
 ## Technical Skills Demonstrated
 
