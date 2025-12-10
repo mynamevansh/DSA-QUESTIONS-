@@ -63,7 +63,7 @@
             <h1>🚀 DSA Algorithms Showcase</h1>
             <p>Company Interview Questions - Optimized Solutions</p>
             <p><strong>FAANG • Microsoft • Adobe • Goldman Sachs</strong></p>
-            <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">✨ Complete Collection: Two Sum, Three Sum, Four Sum & More!</p>
+            <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">✨ 18 Algorithms: Arrays, Matrices, Strings & More!</p>
         </div>
     </header>
 
@@ -412,6 +412,52 @@
                     </div>
                 </div>
                 <div id="setmatrix-result" class="result"></div>
+            </div>
+
+            <div class="algorithm-card" onclick="toggleCard('missingnumber')">
+                <div class="card-front">
+                    <div class="problem-type">Array | Math</div>
+                    <h3>🔢 Missing Number</h3>
+                    <div class="complexity">
+                        <span class="time">O(n)</span>
+                        <span class="space">O(1)</span>
+                    </div>
+                    <div class="algorithm-name">XOR / Sum Formula</div>
+                    <div class="companies">Amazon • Microsoft • Facebook</div>
+                </div>
+                <div class="card-back" id="missingnumber-back">
+                    <div class="back-content">
+                        <h4>Key Concept</h4>
+                        <p>Use mathematical formula: sum of n numbers - actual sum</p>
+                        <h4>Approach</h4>
+                        <p>1. Calculate expected sum<br>2. Calculate actual sum<br>3. Difference is missing number</p>
+                        <button class="demo-btn" onclick="event.stopPropagation(); runMissingNumber()">Demo</button>
+                    </div>
+                </div>
+                <div id="missingnumber-result" class="result"></div>
+            </div>
+
+            <div class="algorithm-card" onclick="toggleCard('missingandrepeated')">
+                <div class="card-front">
+                    <div class="problem-type">Array | HashMap</div>
+                    <h3>🔄 Missing & Repeated</h3>
+                    <div class="complexity">
+                        <span class="time">O(n²)</span>
+                        <span class="space">O(n²)</span>
+                    </div>
+                    <div class="algorithm-name">HashMap Tracking</div>
+                    <div class="companies">Google • Microsoft • Amazon</div>
+                </div>
+                <div class="card-back" id="missingandrepeated-back">
+                    <div class="back-content">
+                        <h4>Key Concept</h4>
+                        <p>Track seen elements, find duplicate and missing</p>
+                        <h4>Approach</h4>
+                        <p>1. Use HashMap to track elements<br>2. Find repeated element<br>3. Find missing from 1 to n²</p>
+                        <button class="demo-btn" onclick="event.stopPropagation(); runMissingAndRepeated()">Demo</button>
+                    </div>
+                </div>
+                <div id="missingandrepeated-result" class="result"></div>
             </div>
         </div>
     </main>

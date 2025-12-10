@@ -319,6 +319,41 @@ class DSAAlgorithms {
         
         return matrix;
     }
+
+    static missingNumber(nums) {
+        const n = nums.length;
+        const expectedSum = (n * (n + 1)) / 2;
+        const actualSum = nums.reduce((acc, num) => acc + num, 0);
+        return expectedSum - actualSum;
+    }
+
+    static missingAndRepeated(grid) {
+        const map = new Map();
+        let repeated = -1;
+        let missing = -1;
+        const n = grid.length;
+        
+        // Find repeated element
+        for (let row of grid) {
+            for (let element of row) {
+                if (map.has(element)) {
+                    repeated = element;
+                } else {
+                    map.set(element, true);
+                }
+            }
+        }
+        
+        // Find missing element
+        for (let i = 1; i <= n * n; i++) {
+            if (!map.has(i)) {
+                missing = i;
+                break;
+            }
+        }
+        
+        return [repeated, missing];
+    }
 }
 
 class PerformanceMonitor {
@@ -661,6 +696,53 @@ function runSetMatrixZeroes() {
         }
     } catch (error) {
         console.error('Error in runSetMatrixZeroes:', error);
+    }
+}
+
+function runMissingNumber() {
+    try {
+        const input = [3, 0, 1];
+        const performance = PerformanceMonitor.measure(
+            'Missing Number',
+            DSAAlgorithms.missingNumber,
+            input
+        );
+        
+        const resultDiv = document.getElementById('missingnumber-result');
+        if (resultDiv) {
+            resultDiv.className = 'result visible';
+            resultDiv.innerHTML = `
+                <strong>Array:</strong> [${input.join(', ')}]<br>
+                <strong>Missing:</strong> ${performance.result}<br>
+                <strong>Time:</strong> ${performance.executionTime}ms
+            `;
+        }
+    } catch (error) {
+        console.error('Error in runMissingNumber:', error);
+    }
+}
+
+function runMissingAndRepeated() {
+    try {
+        const input = [[1,3],[2,2]];
+        const performance = PerformanceMonitor.measure(
+            'Missing and Repeated',
+            DSAAlgorithms.missingAndRepeated,
+            input
+        );
+        
+        const resultDiv = document.getElementById('missingandrepeated-result');
+        if (resultDiv) {
+            resultDiv.className = 'result visible';
+            const inputStr = input.map(row => `[${row.join(',')}]`).join(',');
+            resultDiv.innerHTML = `
+                <strong>Grid:</strong> [${inputStr}]<br>
+                <strong>Repeated:</strong> ${performance.result[0]}, <strong>Missing:</strong> ${performance.result[1]}<br>
+                <strong>Time:</strong> ${performance.executionTime}ms
+            `;
+        }
+    } catch (error) {
+        console.error('Error in runMissingAndRepeated:', error);
     }
 }
 
