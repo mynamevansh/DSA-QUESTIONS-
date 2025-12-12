@@ -1,6 +1,13 @@
-# Data Structures & Algorithms## Algorithm Implementations
+# 🚀 Data Structures & Algorithms
 
-A professional interview preparation repository containing optimized algorithm implementations and interactive demonstrations.
+[![Algorithms](https://img.shields.io/badge/Algorithms-18-blue.svg)](https://github.com/mynamevansh/DSA-QUESTIONS-)
+[![Language](https://img.shields.io/badge/Language-Java-orange.svg)](https://www.java.com/)
+[![Interactive](https://img.shields.io/badge/Demo-Live-green.svg)](./showcase/index.html)
+[![Companies](https://img.shields.io/badge/Companies-15+-red.svg)](./README.md)
+
+A professional interview preparation repository containing **18 optimized algorithm implementations** with interactive demonstrations and real-time performance monitoring.
+
+> 💡 **Perfect for:** Software engineering interviews at FAANG, Microsoft, Goldman Sachs, and other top tech companies.
 
 ## Overview
 
@@ -86,29 +93,82 @@ DSA-QUESTIONS-/
 - Mathematical algorithms
 - Two-pointer and sliding window patterns
 
-## Usage
+## 🎯 Usage
 
-**View Interactive Interface:**
+### View Interactive Showcase
 ```bash
+# Open the interactive web interface
 open showcase/index.html
+# or
+start showcase/index.html  # Windows
 ```
 
-**Run Java Implementations:**
+### Run Java Implementations
 ```bash
-cd Array3
-javac longestsubstring.java
-java longestsubstring
+# Navigate to any directory
+cd Array2
+
+# Compile and run
+javac threesum.java
+java threesum
 ```
 
-## Features
+### Example: Two Sum Problem
+```bash
+cd Array2
+javac twosum.java
+java twosum
+# Output: Indices of two numbers that add up to target
+```
 
-- Optimal time and space complexity solutions
-- Interactive algorithm demonstrations with execution timing
-- Clean, readable code with proper documentation
-- Real interview questions from major technology companies
-- Performance-optimized web interface
+## ✨ Key Features
+
+- ✅ **Optimal Solutions** - Best time and space complexity for each problem
+- 🎮 **Interactive Demos** - Live algorithm execution with visual feedback
+- ⚡ **Performance Tracking** - Real-time execution time measurement
+- 🏢 **Company Tags** - Know which companies ask these questions
+- 📊 **Complexity Analysis** - Detailed Big-O notation for every algorithm
+- 🎨 **Professional UI** - Clean, modern interface with flip cards
+- 📱 **Responsive Design** - Works on desktop and mobile devices
+
+## 🎓 Learning Path
+
+**Beginner (Array1):**
+- Start with `MajorityElement.java` - Learn Boyer-Moore algorithm
+- Practice with `buySellStocks.java` - Understand greedy approach
+- Master `SingleElement.java` - Explore bit manipulation
+
+**Intermediate (Array2):**
+- Solve `twosum.java` → `threesum.java` → `foursum.java` progression
+- Learn two-pointer technique with `trappedrainwater.java`
+- Master Kadane's algorithm in `Maxsubarray.java`
+
+**Advanced (Array3):**
+- Challenge yourself with `nextpermutation.java`
+- Practice interval problems with `mergeoverlap.java`
+- Master sliding window in `longestsubstring.java`
+
+## 📈 Stats
+
+- **18** Production-ready algorithms
+- **3** Programming languages (Java, JavaScript, HTML/CSS)
+- **15+** Top tech companies represented
+- **100%** Optimal time/space complexity solutions
+
+## 🤝 Contributing
+
+Feel free to:
+- Add more algorithm implementations
+- Improve existing solutions
+- Enhance the interactive showcase
+- Report bugs or suggest features
+
+## 📄 License
+
+This project is open source and available for educational purposes.
 
 ---
 
-**Languages:** Java, JavaScript, HTML, CSS  
-**Focus:** Technical interview preparation and algorithm optimization
+**Built with:** Java, JavaScript, HTML5, CSS3  
+**Focus:** Technical Interview Preparation & Algorithm Mastery  
+**Target:** Software Engineering Interviews at Top Tech Companies
