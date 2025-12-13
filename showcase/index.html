@@ -52,6 +52,47 @@
             font-size: 1rem;
             letter-spacing: 0.025em;
         }
+        .filter-chip {
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            border: 2px solid rgba(255,255,255,0.3);
+            background: transparent;
+            color: white;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s;
+            font-family: 'Inter', sans-serif;
+        }
+        .filter-chip:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+        .filter-chip.active {
+            background: white;
+            color: #2563eb;
+            border-color: white;
+        }
+        #searchBox:focus {
+            transform: scale(1.02);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+        .algorithm-card.hidden {
+            display: none;
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .algorithm-card {
+            animation: slideIn 0.5s ease-out;
+        }
     </style>
     
     <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -64,10 +105,42 @@
             <p>Company Interview Questions - Optimized Solutions</p>
             <p><strong>FAANG • Microsoft • Adobe • Goldman Sachs</strong></p>
             <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">✨ 18 Algorithms: Arrays, Matrices, Strings & More!</p>
+            
+            <!-- Search and Filter Bar -->
+            <div style="margin-top: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <input type="text" id="searchBox" placeholder="🔍 Search algorithms (e.g., 'two sum', 'array', 'O(n)')..." 
+                    style="width: 100%; padding: 1rem 1.5rem; border: none; border-radius: 50px; font-size: 1rem; 
+                    box-shadow: 0 10px 25px rgba(0,0,0,0.15); outline: none; transition: all 0.3s;">
+            </div>
+            
+            <!-- Filter Chips -->
+            <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+                <button class="filter-chip" data-filter="all" style="background: white; color: #2563eb; border: 2px solid white;">All</button>
+                <button class="filter-chip" data-filter="array">Array</button>
+                <button class="filter-chip" data-filter="matrix">Matrix</button>
+                <button class="filter-chip" data-filter="string">String</button>
+                <button class="filter-chip" data-filter="O(n)">O(n)</button>
+                <button class="filter-chip" data-filter="O(1)">O(1) Space</button>
+            </div>
         </div>
     </header>
 
     <main class="container">
+        <!-- Stats Bar -->
+        <div style="display: flex; justify-content: space-around; margin: 2rem auto; max-width: 800px; padding: 1.5rem; background: white; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+            <div style="text-align: center;">
+                <div style="font-size: 2rem; font-weight: 700; color: #2563eb;">18</div>
+                <div style="font-size: 0.9rem; color: #64748b;">Total Algorithms</div>
+            </div>
+            <div style="text-align: center;">
+                <div style="font-size: 2rem; font-weight: 700; color: #10b981;" id="visibleCount">18</div>
+                <div style="font-size: 0.9rem; color: #64748b;">Showing</div>
+            </div>
+            <div style="text-align: center;">
+                <div style="font-size: 2rem; font-weight: 700; color: #f59e0b;">15+</div>
+                <div style="font-size: 0.9rem; color: #64748b;">Companies</div>
+            </div>
+        </div>
         <div class="algorithms-grid">
             <div class="algorithm-card" onclick="toggleCard('majority')">
                 <div class="card-front">
@@ -461,6 +534,14 @@
             </div>
         </div>
     </main>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" style="position: fixed; bottom: 2rem; right: 2rem; width: 50px; height: 50px; 
+        border-radius: 50%; background: linear-gradient(135deg, #2563eb, #1e40af); color: white; 
+        border: none; cursor: pointer; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3); 
+        font-size: 1.5rem; display: none; z-index: 1000; transition: all 0.3s;">
+        ↑
+    </button>
 
     <footer style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); color: white; padding: 3rem 0; margin-top: 4rem; text-align: center;">
         <div class="container">

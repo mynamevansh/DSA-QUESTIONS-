@@ -793,3 +793,100 @@ function toggleCard(cardId) {
         }
     }
 }
+
+// Search and Filter Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const searchBox = document.getElementById('searchBox');
+    const filterChips = document.querySelectorAll('.filter-chip');
+    const algorithmCards = document.querySelectorAll('.algorithm-card');
+    const visibleCount = document.getElementById('visibleCount');
+    
+    let currentFilter = 'all';
+    
+    // Search functionality
+    if (searchBox) {
+        searchBox.addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            filterAlgorithms(searchTerm, currentFilter);
+        });
+    }
+    
+    // Filter chip functionality
+    filterChips.forEach(chip => {
+        chip.addEventListener('click', function() {
+            filterChips.forEach(c => c.classList.remove('active'));
+            this.classList.add('active');
+            currentFilter = this.dataset.filter;
+            const searchTerm = searchBox ? searchBox.value.toLowerCase() : '';
+            filterAlgorithms(searchTerm, currentFilter);
+        });
+    });
+    
+    function filterAlgorithms(searchTerm, filter) {
+        let visibleCards = 0;
+        
+        algorithmCards.forEach(card => {
+            const cardText = card.textContent.toLowerCase();
+            const matchesSearch = !searchTerm || cardText.includes(searchTerm);
+            const matchesFilter = filter === 'all' || cardText.includes(filter.toLowerCase());
+            
+            if (matchesSearch && matchesFilter) {
+                card.classList.remove('hidden');
+                visibleCards++;
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+        
+        if (visibleCount) {
+            visibleCount.textContent = visibleCards;
+            visibleCount.style.color = visibleCards === 18 ? '#10b981' : '#f59e0b';
+        }
+    }
+    
+    // Add keyboard shortcut for search (Ctrl/Cmd + K)
+    document.addEventListener('keydown', function(e) {
+        if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+            e.preventDefault();
+            if (searchBox) {
+                searchBox.focus();
+            }
+        }
+    });
+    
+    console.log('✨ Search and filter functionality loaded!');
+    
+    // Back to Top button functionality
+    const backToTopButton = document.getElementById('backToTop');
+    
+    if (backToTopButton) {
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.display = 'block';
+                backToTopButton.style.opacity = '1';
+            } else {
+                backToTopButton.style.opacity = '0';
+                setTimeout(() => {
+                    if (window.pageYOffset <= 300) {
+                        backToTopButton.style.display = 'none';
+                    }
+                }, 300);
+            }
+        });
+        
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        backToTopButton.addEventListener('mouseenter', function() {
+            this.style.transform = 'scale(1.1) translateY(-5px)';
+        });
+        
+        backToTopButton.addEventListener('mouseleave', function() {
+            this.style.transform = 'scale(1) translateY(0)';
+        });
+    }
+});
