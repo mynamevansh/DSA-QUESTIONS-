@@ -354,6 +354,58 @@ class DSAAlgorithms {
         
         return [repeated, missing];
     }
+
+    static productExceptSelf(nums) {
+        const n = nums.length;
+        const result = new Array(n);
+        
+        // Build prefix products
+        result[0] = 1;
+        for (let i = 1; i < n; i++) {
+            result[i] = result[i - 1] * nums[i - 1];
+        }
+        
+        // Build suffix products and multiply
+        let right = 1;
+        for (let i = n - 1; i >= 0; i--) {
+            result[i] = result[i] * right;
+            right = right * nums[i];
+        }
+        
+        return result;
+    }
+
+    static wordSearch(board, word) {
+        const rows = board.length;
+        const cols = board[0].length;
+        
+        function dfs(row, col, index) {
+            if (index === word.length) return true;
+            if (row < 0 || row >= rows || col < 0 || col >= cols || 
+                board[row][col] !== word[index]) {
+                return false;
+            }
+            
+            const temp = board[row][col];
+            board[row][col] = '#';
+            
+            const found = 
+                dfs(row + 1, col, index + 1) ||
+                dfs(row - 1, col, index + 1) ||
+                dfs(row, col + 1, index + 1) ||
+                dfs(row, col - 1, index + 1);
+            
+            board[row][col] = temp;
+            return found;
+        }
+        
+        for (let i = 0; i < rows; i++) {
+            for (let j = 0; j < cols; j++) {
+                if (dfs(i, j, 0)) return true;
+            }
+        }
+        return false;
+    }
 }
 
 class PerformanceMonitor {
@@ -746,6 +798,61 @@ function runMissingAndRepeated() {
     }
 }
 
+function runProductArray() {
+    try {
+        const input = [1, 2, 3, 4];
+        const performance = PerformanceMonitor.measure(
+            'Product Except Self',
+            DSAAlgorithms.productExceptSelf,
+            input
+        );
+        
+        const resultDiv = document.getElementById('productarray-result');
+        if (resultDiv) {
+            resultDiv.className = 'result visible';
+            resultDiv.innerHTML = `
+                <strong>Input:</strong> [${input.join(', ')}]<br>
+                <strong>Output:</strong> [${performance.result.join(', ')}]<br>
+                <strong>Time:</strong> ${performance.executionTime}ms
+            `;
+        }
+    } catch (error) {
+        console.error('Error in runProductArray:', error);
+    }
+}
+
+function runWordSearch() {
+    try {
+        const board = [
+            ['A','B','C','E'],
+            ['S','F','C','S'],
+            ['A','D','E','E']
+        ];
+        const word = 'ABCCED';
+        
+        const boardCopy = board.map(row => [...row]);
+        const performance = PerformanceMonitor.measure(
+            'Word Search',
+            (data) => DSAAlgorithms.wordSearch(data.board, data.word),
+            { board: boardCopy, word }
+        );
+        
+        const resultDiv = document.getElementById('wordsearch-result');
+        if (resultDiv) {
+            resultDiv.className = 'result visible';
+            const boardStr = board.map(row => `[${row.join(',')}]`).join(',');
+            resultDiv.innerHTML = `
+                <strong>Board:</strong> [${boardStr}]<br>
+                <strong>Word:</strong> "${word}"<br>
+                <strong>Found:</strong> ${performance.result}<br>
+                <strong>Time:</strong> ${performance.executionTime}ms
+            `;
+        }
+    } catch (error) {
+        console.error('Error in runWordSearch:', error);
+    }
+}
+
 console.log('🚀 DSA Algorithms loaded successfully!');
 console.log('📊 Performance monitoring enabled');
 
@@ -840,7 +947,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (visibleCount) {
             visibleCount.textContent = visibleCards;
-            visibleCount.style.color = visibleCards === 18 ? '#10b981' : '#f59e0b';
+            visibleCount.style.color = visibleCards === 20 ? '#10b981' : '#f59e0b';
         }
     }
     

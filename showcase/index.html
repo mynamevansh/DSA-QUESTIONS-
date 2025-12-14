@@ -104,7 +104,7 @@
             <h1>🚀 DSA Algorithms Showcase</h1>
             <p>Company Interview Questions - Optimized Solutions</p>
             <p><strong>FAANG • Microsoft • Adobe • Goldman Sachs</strong></p>
-            <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">✨ 18 Algorithms: Arrays, Matrices, Strings & More!</p>
+            <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">✨ 20 Algorithms: Arrays, Matrices, Strings, Backtracking & More!</p>
             
             <!-- Search and Filter Bar -->
             <div style="margin-top: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
@@ -129,11 +129,11 @@
         <!-- Stats Bar -->
         <div style="display: flex; justify-content: space-around; margin: 2rem auto; max-width: 800px; padding: 1.5rem; background: white; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
             <div style="text-align: center;">
-                <div style="font-size: 2rem; font-weight: 700; color: #2563eb;">18</div>
+                <div style="font-size: 2rem; font-weight: 700; color: #2563eb;">20</div>
                 <div style="font-size: 0.9rem; color: #64748b;">Total Algorithms</div>
             </div>
             <div style="text-align: center;">
-                <div style="font-size: 2rem; font-weight: 700; color: #10b981;" id="visibleCount">18</div>
+                <div style="font-size: 2rem; font-weight: 700; color: #10b981;" id="visibleCount">20</div>
                 <div style="font-size: 0.9rem; color: #64748b;">Showing</div>
             </div>
             <div style="text-align: center;">
@@ -532,6 +532,52 @@
                 </div>
                 <div id="missingandrepeated-result" class="result"></div>
             </div>
+
+            <div class="algorithm-card" onclick="toggleCard('productarray')">
+                <div class="card-front">
+                    <div class="problem-type">Array | Prefix/Suffix</div>
+                    <h3>✖️ Product Except Self</h3>
+                    <div class="complexity">
+                        <span class="time">O(n)</span>
+                        <span class="space">O(1)</span>
+                    </div>
+                    <div class="algorithm-name">Prefix-Suffix Product</div>
+                    <div class="companies">Amazon • Facebook • Microsoft</div>
+                </div>
+                <div class="card-back" id="productarray-back">
+                    <div class="back-content">
+                        <h4>Key Concept</h4>
+                        <p>Build prefix products left-to-right, then multiply by suffix right-to-left</p>
+                        <h4>Approach</h4>
+                        <p>1. Left pass: prefix products<br>2. Right pass: multiply by suffix<br>3. Result without division</p>
+                        <button class="demo-btn" onclick="event.stopPropagation(); runProductArray()">Demo</button>
+                    </div>
+                </div>
+                <div id="productarray-result" class="result"></div>
+            </div>
+
+            <div class="algorithm-card" onclick="toggleCard('wordsearch')">
+                <div class="card-front">
+                    <div class="problem-type">Matrix | Backtracking</div>
+                    <h3>🔤 Word Search</h3>
+                    <div class="complexity">
+                        <span class="time">O(m×n×4^L)</span>
+                        <span class="space">O(L)</span>
+                    </div>
+                    <div class="algorithm-name">DFS Backtracking</div>
+                    <div class="companies">Microsoft • Amazon • Facebook</div>
+                </div>
+                <div class="card-back" id="wordsearch-back">
+                    <div class="back-content">
+                        <h4>Key Concept</h4>
+                        <p>DFS from each cell, mark visited, backtrack on failure</p>
+                        <h4>Approach</h4>
+                        <p>1. Try each cell as start<br>2. DFS in 4 directions<br>3. Mark visited, restore on backtrack</p>
+                        <button class="demo-btn" onclick="event.stopPropagation(); runWordSearch()">Demo</button>
+                    </div>
+                </div>
+                <div id="wordsearch-result" class="result"></div>
+            </div>
         </div>
     </main>
 
@@ -546,10 +592,10 @@
     <footer style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); color: white; padding: 3rem 0; margin-top: 4rem; text-align: center;">
         <div class="container">
             <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">🎯 Master Your Technical Interviews</h3>
-            <p style="opacity: 0.9; margin-bottom: 1.5rem; font-size: 1.1rem;">18 Production-Ready Algorithm Implementations</p>
+            <p style="opacity: 0.9; margin-bottom: 1.5rem; font-size: 1.1rem;">20 Production-Ready Algorithm Implementations</p>
             <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
                 <div style="text-align: center;">
-                    <div style="font-size: 2rem; font-weight: 700; color: #60a5fa;">18</div>
+                    <div style="font-size: 2rem; font-weight: 700; color: #60a5fa;">20</div>
                     <div style="opacity: 0.8; font-size: 0.9rem;">Algorithms</div>
                 </div>
                 <div style="text-align: center;">
