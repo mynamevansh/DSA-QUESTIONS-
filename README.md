@@ -1,17 +1,17 @@
 # 🚀 Data Structures & Algorithms
 
-[![Algorithms](https://img.shields.io/badge/Algorithms-18-blue.svg)](https://github.com/mynamevansh/DSA-QUESTIONS-)
+[![Algorithms](https://img.shields.io/badge/Algorithms-20-blue.svg)](https://github.com/mynamevansh/DSA-QUESTIONS-)
 [![Language](https://img.shields.io/badge/Language-Java-orange.svg)](https://www.java.com/)
 [![Interactive](https://img.shields.io/badge/Demo-Live-green.svg)](./showcase/index.html)
 [![Companies](https://img.shields.io/badge/Companies-15+-red.svg)](./README.md)
 
-A professional interview preparation repository containing **18 optimized algorithm implementations** with interactive demonstrations and real-time performance monitoring.
+A professional interview preparation repository containing **20 optimized algorithm implementations** with interactive demonstrations and real-time performance monitoring.
 
 > 💡 **Perfect for:** Software engineering interviews at FAANG, Microsoft, Goldman Sachs, and other top tech companies.
 
 ## Overview
 
-This repository contains **18 optimized algorithm implementations** for frequently asked interview questions from top technology companies including FAANG, Microsoft, Goldman Sachs, and other leading firms.
+This repository contains **20 optimized algorithm implementations** for frequently asked interview questions from top technology companies including FAANG, Microsoft, Goldman Sachs, and other leading firms.
 
 **✨ Interactive Demo:** [showcase/index.html](./showcase/index.html) - Live algorithm visualizations with real-time performance monitoring
 
@@ -51,12 +51,14 @@ DSA-QUESTIONS-/
     ├── nextpermutation.java # Next lexicographic permutation
     ├── mergeoverlap.java    # Merge overlapping intervals
     ├── longestsubstring.java # Longest substring without repeating chars
-    └── setmatrixzero.java   # Set matrix zeroes in-place
+    ├── setmatrixzero.java   # Set matrix zeroes in-place
+    ├── productitselfarray.java # Product of array except self
+    └── wordsearch.java      # Word search using backtracking
 ```
 
 ## Algorithm Implementations
 
-### 18 Optimized Algorithms
+### 20 Optimized Algorithms
 
 | Algorithm | Complexity | Companies | Technique |
 |-----------|------------|-----------|-----------|
@@ -78,6 +80,8 @@ DSA-QUESTIONS-/
 | 🪟 **Longest Substring** | O(n)/O(min(m,n)) | Amazon, Microsoft | Sliding Window |
 | ⚪ **Set Matrix Zeroes** | O(m×n)/O(1) | Microsoft, Apple | In-place Flag Technique |
 | 🔀 **Merge Two Sorted Arrays** | O(m+n)/O(1) | Facebook, Microsoft | Two Pointers |
+| ✖️ **Product Except Self** | O(n)/O(1) | Amazon, Facebook, Microsoft | Prefix-Suffix Product |
+| 🔤 **Word Search** | O(m×n×4^L)/O(L) | Microsoft, Amazon, Facebook | DFS Backtracking |
 
 ## Technical Skills Demonstrated
 
@@ -92,6 +96,8 @@ DSA-QUESTIONS-/
 - Dynamic programming techniques
 - Mathematical algorithms
 - Two-pointer and sliding window patterns
+- Backtracking and DFS
+- Prefix-Suffix techniques
 
 ## 🎯 Usage
 
@@ -147,13 +153,16 @@ java twosum
 - Challenge yourself with `nextpermutation.java`
 - Practice interval problems with `mergeoverlap.java`
 - Master sliding window in `longestsubstring.java`
+- Optimize array products with `productitselfarray.java`
+- Solve backtracking problems with `wordsearch.java`
 
 ## 📈 Stats
 
-- **18** Production-ready algorithms
+- **20** Production-ready algorithms
 - **3** Programming languages (Java, JavaScript, HTML/CSS)
 - **15+** Top tech companies represented
 - **100%** Optimal time/space complexity solutions
+- **5** Algorithm categories (Arrays, Matrices, Strings, Backtracking, Math)
 
 ## 🤝 Contributing
 
