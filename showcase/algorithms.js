@@ -963,6 +963,57 @@ document.addEventListener('DOMContentLoaded', function() {
     
     console.log('✨ Search and filter functionality loaded!');
     
+    // Progress Bar
+    const progressBar = document.getElementById('progressBar');
+    if (progressBar) {
+        window.addEventListener('scroll', function() {
+            const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (window.pageYOffset / windowHeight) * 100;
+            progressBar.style.width = scrolled + '%';
+        });
+    }
+    
+    // Add keyboard navigation
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            // Close all open cards
+            document.querySelectorAll('.algorithm-card.flipped').forEach(card => {
+                card.classList.remove('flipped');
+            });
+            // Hide all results
+            document.querySelectorAll('.result.visible').forEach(result => {
+                result.classList.remove('visible');
+            });
+        }
+    });
+    
+    // Add smooth scroll behavior
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+    
+    // Performance: Lazy load algorithm executions
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    document.querySelectorAll('.algorithm-card').forEach(card => {
+        observer.observe(card);
+    });
+    
     // Back to Top button functionality
     const backToTopButton = document.getElementById('backToTop');
     
@@ -996,4 +1047,38 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.transform = 'scale(1) translateY(0)';
         });
     }
+
+    // Update footer year
+    const yearElement = document.getElementById('currentYear');
+    if (yearElement) {
+        yearElement.textContent = '© ' + new Date().getFullYear();
+    }
+
+    // Ctrl+K to focus search
+    document.addEventListener('keydown', function(e) {
+        if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+            e.preventDefault();
+            const searchInput = document.getElementById('searchInput');
+            if (searchInput) {
+                searchInput.focus();
+            }
+        }
+    });
+
+    // Animate stats on load
+    const statNumbers = document.querySelectorAll('.stat-number');
+    statNumbers.forEach(function(stat) {
+        const target = parseInt(stat.textContent);
+        let current = 0;
+        const increment = target / 30;
+        const timer = setInterval(function() {
+            current += increment;
+            if (current >= target) {
+                stat.textContent = target;
+                clearInterval(timer);
+            } else {
+                stat.textContent = Math.floor(current);
+            }
+        }, 30);
+    });
 });

@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Interactive DSA algorithms showcase with performance monitoring for technical interviews">
-    <title>DSA Algorithms - Interview Questions</title>
+    <meta name="keywords" content="DSA, algorithms, data structures, interview preparation, FAANG, coding interview">
+    <meta name="author" content="DSA Questions">
+    <meta property="og:title" content="DSA Algorithms Showcase - 20 Interview Questions">
+    <meta property="og:description" content="Master technical interviews with 20 optimized algorithm implementations">
+    <meta property="og:type" content="website">
+    <title>DSA Algorithms - Interview Questions | 20 Optimized Solutions</title>
     
     
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -93,12 +98,58 @@
         .algorithm-card {
             animation: slideIn 0.5s ease-out;
         }
+        /* Progress Bar */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #2563eb, #7c3aed, #db2777);
+            width: 0%;
+            transition: width 0.3s ease;
+            z-index: 9999;
+        }
+        /* Loading Spinner */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        /* Tooltip */
+        [data-tooltip] {
+            position: relative;
+        }
+        [data-tooltip]:hover::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 0.5rem 1rem;
+            background: #1e293b;
+            color: white;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            white-space: nowrap;
+            margin-bottom: 0.5rem;
+            z-index: 1000;
+        }
     </style>
     
     <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="styles.css"></noscript>
 </head>
 <body>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+    
     <header class="header">
         <div class="container">
             <h1>🚀 DSA Algorithms Showcase</h1>
@@ -115,12 +166,12 @@
             
             <!-- Filter Chips -->
             <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
-                <button class="filter-chip" data-filter="all" style="background: white; color: #2563eb; border: 2px solid white;">All</button>
-                <button class="filter-chip" data-filter="array">Array</button>
-                <button class="filter-chip" data-filter="matrix">Matrix</button>
-                <button class="filter-chip" data-filter="string">String</button>
-                <button class="filter-chip" data-filter="O(n)">O(n)</button>
-                <button class="filter-chip" data-filter="O(1)">O(1) Space</button>
+                <button class="filter-chip" data-filter="all" data-tooltip="Show all algorithms" style="background: white; color: #2563eb; border: 2px solid white;">All</button>
+                <button class="filter-chip" data-filter="array" data-tooltip="Array-based algorithms">Array</button>
+                <button class="filter-chip" data-filter="matrix" data-tooltip="Matrix operations">Matrix</button>
+                <button class="filter-chip" data-filter="string" data-tooltip="String algorithms">String</button>
+                <button class="filter-chip" data-filter="O(n)" data-tooltip="Linear time complexity">O(n)</button>
+                <button class="filter-chip" data-filter="O(1)" data-tooltip="Constant space">O(1) Space</button>
             </div>
         </div>
     </header>
@@ -615,7 +666,10 @@
                 Built with Java, JavaScript, HTML & CSS • Designed for Interview Success
             </p>
             <p style="opacity: 0.6; font-size: 0.85rem; margin-top: 1rem;">
-                © 2025 DSA Algorithms Showcase • Open Source Educational Project
+                <span id="currentYear"></span> DSA Algorithms Showcase • Open Source Educational Project
+            </p>
+            <p style="opacity: 0.5; font-size: 0.8rem; margin-top: 0.5rem;">
+                Press <kbd style="background: rgba(255,255,255,0.1); padding: 0.2rem 0.5rem; border-radius: 4px;">Ctrl+K</kbd> to search • <kbd style="background: rgba(255,255,255,0.1); padding: 0.2rem 0.5rem; border-radius: 4px;">Esc</kbd> to close cards
             </p>
         </div>
     </footer>
