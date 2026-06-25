@@ -181,3 +181,15 @@ This project is open source and available for educational purposes.
 **Built with:** Java, JavaScript, HTML5, CSS3  
 **Focus:** Technical Interview Preparation & Algorithm Mastery  
 **Target:** Software Engineering Interviews at Top Tech Companies
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Linked List
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0206-reverse-linked-list) |
+## Recursion
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0206-reverse-linked-list) |
+<!---LeetCode Topics End-->
