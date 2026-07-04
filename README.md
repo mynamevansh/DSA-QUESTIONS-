@@ -268,6 +268,7 @@ This project is open source and available for educational purposes.
 | [0110-balanced-binary-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0110-balanced-binary-tree) |
 | [0226-invert-binary-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0226-invert-binary-tree) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
+| [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0572-subtree-of-another-tree) |
 ## Depth-First Search
 |  |
@@ -277,6 +278,7 @@ This project is open source and available for educational purposes.
 | [0110-balanced-binary-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0110-balanced-binary-tree) |
 | [0226-invert-binary-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0226-invert-binary-tree) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
+| [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0572-subtree-of-another-tree) |
 ## Breadth-First Search
 |  |
@@ -292,6 +294,7 @@ This project is open source and available for educational purposes.
 | [0110-balanced-binary-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0110-balanced-binary-tree) |
 | [0226-invert-binary-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0226-invert-binary-tree) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
+| [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0572-subtree-of-another-tree) |
 ## String Matching
 |  |
