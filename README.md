@@ -242,6 +242,7 @@ This project is open source and available for educational purposes.
 | [0215-kth-largest-element-in-an-array](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0215-kth-largest-element-in-an-array) |
 | [0287-find-the-duplicate-number](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0287-find-the-duplicate-number) |
 | [0414-third-maximum-number](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0414-third-maximum-number) |
+| [1046-last-stone-weight](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/1046-last-stone-weight) |
 ## Binary Search
 |  |
 | ------- |
@@ -272,6 +273,7 @@ This project is open source and available for educational purposes.
 | [0023-merge-k-sorted-lists](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0023-merge-k-sorted-lists) |
 | [0215-kth-largest-element-in-an-array](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0215-kth-largest-element-in-an-array) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0703-kth-largest-element-in-a-stream) |
+| [1046-last-stone-weight](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/1046-last-stone-weight) |
 ## Merge Sort
 |  |
 | ------- |
