@@ -254,6 +254,7 @@ This project is open source and available for educational purposes.
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0146-lru-cache) |
+| [0703-kth-largest-element-in-a-stream](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0703-kth-largest-element-in-a-stream) |
 ## Doubly-Linked List
 |  |
 | ------- |
@@ -270,6 +271,7 @@ This project is open source and available for educational purposes.
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0023-merge-k-sorted-lists) |
 | [0215-kth-largest-element-in-an-array](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0215-kth-largest-element-in-an-array) |
+| [0703-kth-largest-element-in-a-stream](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0703-kth-largest-element-in-a-stream) |
 ## Merge Sort
 |  |
 | ------- |
@@ -295,6 +297,7 @@ This project is open source and available for educational purposes.
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0572-subtree-of-another-tree) |
+| [0703-kth-largest-element-in-a-stream](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0703-kth-largest-element-in-a-stream) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/1448-count-good-nodes-in-binary-tree) |
 ## Depth-First Search
 |  |
@@ -345,6 +348,7 @@ This project is open source and available for educational purposes.
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0572-subtree-of-another-tree) |
+| [0703-kth-largest-element-in-a-stream](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0703-kth-largest-element-in-a-stream) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/1448-count-good-nodes-in-binary-tree) |
 ## String Matching
 |  |
@@ -360,6 +364,7 @@ This project is open source and available for educational purposes.
 | [0098-validate-binary-search-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0098-validate-binary-search-tree) |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
+| [0703-kth-largest-element-in-a-stream](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0703-kth-largest-element-in-a-stream) |
 ## Number Theory
 |  |
 | ------- |
@@ -377,4 +382,8 @@ This project is open source and available for educational purposes.
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0215-kth-largest-element-in-an-array) |
+## Data Stream
+|  |
+| ------- |
+| [0703-kth-largest-element-in-a-stream](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0703-kth-largest-element-in-a-stream) |
 <!---LeetCode Topics End-->
