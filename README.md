@@ -241,6 +241,7 @@ This project is open source and available for educational purposes.
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0215-kth-largest-element-in-an-array](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0215-kth-largest-element-in-an-array) |
 | [0287-find-the-duplicate-number](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0287-find-the-duplicate-number) |
+| [0414-third-maximum-number](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0414-third-maximum-number) |
 ## Binary Search
 |  |
 | ------- |
@@ -371,6 +372,7 @@ This project is open source and available for educational purposes.
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0215-kth-largest-element-in-an-array) |
+| [0414-third-maximum-number](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0414-third-maximum-number) |
 ## Quickselect
 |  |
 | ------- |
