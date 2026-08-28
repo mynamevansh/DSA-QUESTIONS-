@@ -233,6 +233,7 @@ This project is open source and available for educational purposes.
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0002-add-two-numbers) |
+| [0973-k-closest-points-to-origin](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0973-k-closest-points-to-origin) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/3658-gcd-of-odd-and-even-sums) |
 ## Array
 |  |
@@ -242,6 +243,7 @@ This project is open source and available for educational purposes.
 | [0215-kth-largest-element-in-an-array](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0215-kth-largest-element-in-an-array) |
 | [0287-find-the-duplicate-number](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0287-find-the-duplicate-number) |
 | [0414-third-maximum-number](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0414-third-maximum-number) |
+| [0973-k-closest-points-to-origin](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0973-k-closest-points-to-origin) |
 | [1046-last-stone-weight](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/1046-last-stone-weight) |
 ## Binary Search
 |  |
@@ -267,12 +269,14 @@ This project is open source and available for educational purposes.
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0215-kth-largest-element-in-an-array](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0215-kth-largest-element-in-an-array) |
+| [0973-k-closest-points-to-origin](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0973-k-closest-points-to-origin) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0023-merge-k-sorted-lists) |
 | [0215-kth-largest-element-in-an-array](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0215-kth-largest-element-in-an-array) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0703-kth-largest-element-in-a-stream) |
+| [0973-k-closest-points-to-origin](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0973-k-closest-points-to-origin) |
 | [1046-last-stone-weight](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/1046-last-stone-weight) |
 ## Merge Sort
 |  |
@@ -380,12 +384,22 @@ This project is open source and available for educational purposes.
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0215-kth-largest-element-in-an-array) |
 | [0414-third-maximum-number](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0414-third-maximum-number) |
+| [0973-k-closest-points-to-origin](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0973-k-closest-points-to-origin) |
 ## Quickselect
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0215-kth-largest-element-in-an-array) |
+| [0973-k-closest-points-to-origin](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0973-k-closest-points-to-origin) |
 ## Data Stream
 |  |
 | ------- |
 | [0703-kth-largest-element-in-a-stream](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0703-kth-largest-element-in-a-stream) |
+## Geometry
+|  |
+| ------- |
+| [0973-k-closest-points-to-origin](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0973-k-closest-points-to-origin) |
+## K-D Tree
+|  |
+| ------- |
+| [0973-k-closest-points-to-origin](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0973-k-closest-points-to-origin) |
 <!---LeetCode Topics End-->
