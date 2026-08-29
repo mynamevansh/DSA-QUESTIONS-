@@ -214,6 +214,7 @@ This project is open source and available for educational purposes.
 | [0138-copy-list-with-random-pointer](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0141-linked-list-cycle) |
 | [0146-lru-cache](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0146-lru-cache) |
+| [0347-top-k-frequent-elements](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0347-top-k-frequent-elements) |
 ## Two Pointers
 |  |
 | ------- |
@@ -242,6 +243,7 @@ This project is open source and available for educational purposes.
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0215-kth-largest-element-in-an-array](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0215-kth-largest-element-in-an-array) |
 | [0287-find-the-duplicate-number](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0287-find-the-duplicate-number) |
+| [0347-top-k-frequent-elements](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0347-top-k-frequent-elements) |
 | [0414-third-maximum-number](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0414-third-maximum-number) |
 | [0973-k-closest-points-to-origin](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0973-k-closest-points-to-origin) |
 | [1046-last-stone-weight](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/1046-last-stone-weight) |
@@ -269,12 +271,14 @@ This project is open source and available for educational purposes.
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0215-kth-largest-element-in-an-array](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0215-kth-largest-element-in-an-array) |
+| [0347-top-k-frequent-elements](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0347-top-k-frequent-elements) |
 | [0973-k-closest-points-to-origin](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0973-k-closest-points-to-origin) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0023-merge-k-sorted-lists) |
 | [0215-kth-largest-element-in-an-array](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0215-kth-largest-element-in-an-array) |
+| [0347-top-k-frequent-elements](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0347-top-k-frequent-elements) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0973-k-closest-points-to-origin](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0973-k-closest-points-to-origin) |
 | [1046-last-stone-weight](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/1046-last-stone-weight) |
@@ -383,12 +387,14 @@ This project is open source and available for educational purposes.
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0215-kth-largest-element-in-an-array) |
+| [0347-top-k-frequent-elements](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0347-top-k-frequent-elements) |
 | [0414-third-maximum-number](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0414-third-maximum-number) |
 | [0973-k-closest-points-to-origin](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0973-k-closest-points-to-origin) |
 ## Quickselect
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0215-kth-largest-element-in-an-array) |
+| [0347-top-k-frequent-elements](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0347-top-k-frequent-elements) |
 | [0973-k-closest-points-to-origin](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0973-k-closest-points-to-origin) |
 ## Data Stream
 |  |
@@ -402,4 +408,12 @@ This project is open source and available for educational purposes.
 |  |
 | ------- |
 | [0973-k-closest-points-to-origin](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0973-k-closest-points-to-origin) |
+## Bucket Sort
+|  |
+| ------- |
+| [0347-top-k-frequent-elements](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0347-top-k-frequent-elements) |
+## Counting
+|  |
+| ------- |
+| [0347-top-k-frequent-elements](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0347-top-k-frequent-elements) |
 <!---LeetCode Topics End-->
