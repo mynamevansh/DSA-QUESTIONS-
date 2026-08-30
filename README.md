@@ -215,6 +215,7 @@ This project is open source and available for educational purposes.
 | [0141-linked-list-cycle](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0141-linked-list-cycle) |
 | [0146-lru-cache](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0146-lru-cache) |
 | [0347-top-k-frequent-elements](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0347-top-k-frequent-elements) |
+| [2404-most-frequent-even-element](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/2404-most-frequent-even-element) |
 ## Two Pointers
 |  |
 | ------- |
@@ -247,6 +248,7 @@ This project is open source and available for educational purposes.
 | [0414-third-maximum-number](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0414-third-maximum-number) |
 | [0973-k-closest-points-to-origin](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0973-k-closest-points-to-origin) |
 | [1046-last-stone-weight](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/1046-last-stone-weight) |
+| [2404-most-frequent-even-element](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/2404-most-frequent-even-element) |
 ## Binary Search
 |  |
 | ------- |
@@ -416,4 +418,5 @@ This project is open source and available for educational purposes.
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0347-top-k-frequent-elements) |
+| [2404-most-frequent-even-element](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/2404-most-frequent-even-element) |
 <!---LeetCode Topics End-->
