@@ -240,6 +240,7 @@ This project is open source and available for educational purposes.
 | [0973-k-closest-points-to-origin](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0973-k-closest-points-to-origin) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/3658-gcd-of-odd-and-even-sums) |
 | [3875-construct-uniform-parity-array-i](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/3875-construct-uniform-parity-array-i) |
+| [3876-construct-uniform-parity-array-ii](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/3876-construct-uniform-parity-array-ii) |
 ## Array
 |  |
 | ------- |
@@ -255,6 +256,7 @@ This project is open source and available for educational purposes.
 | [1046-last-stone-weight](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/1046-last-stone-weight) |
 | [2404-most-frequent-even-element](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/2404-most-frequent-even-element) |
 | [3875-construct-uniform-parity-array-i](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/3875-construct-uniform-parity-array-i) |
+| [3876-construct-uniform-parity-array-ii](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/3876-construct-uniform-parity-array-ii) |
 ## Binary Search
 |  |
 | ------- |
