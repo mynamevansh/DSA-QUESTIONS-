@@ -197,6 +197,7 @@ This project is open source and available for educational purposes.
 | [0143-reorder-list](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0143-reorder-list) |
 | [0146-lru-cache](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0146-lru-cache) |
 | [0206-reverse-linked-list](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0206-reverse-linked-list) |
+| [0355-design-twitter](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0355-design-twitter) |
 | [0876-middle-of-the-linked-list](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0876-middle-of-the-linked-list) |
 ## Recursion
 |  |
@@ -215,6 +216,7 @@ This project is open source and available for educational purposes.
 | [0141-linked-list-cycle](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0141-linked-list-cycle) |
 | [0146-lru-cache](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0146-lru-cache) |
 | [0347-top-k-frequent-elements](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0347-top-k-frequent-elements) |
+| [0355-design-twitter](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0355-design-twitter) |
 | [0621-task-scheduler](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0621-task-scheduler) |
 | [0692-top-k-frequent-words](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0692-top-k-frequent-words) |
 | [2404-most-frequent-even-element](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/2404-most-frequent-even-element) |
@@ -271,6 +273,7 @@ This project is open source and available for educational purposes.
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0146-lru-cache) |
+| [0355-design-twitter](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0355-design-twitter) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0703-kth-largest-element-in-a-stream) |
 ## Doubly-Linked List
 |  |
@@ -291,6 +294,7 @@ This project is open source and available for educational purposes.
 | [0023-merge-k-sorted-lists](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0023-merge-k-sorted-lists) |
 | [0215-kth-largest-element-in-an-array](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0347-top-k-frequent-elements) |
+| [0355-design-twitter](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0355-design-twitter) |
 | [0621-task-scheduler](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0621-task-scheduler) |
 | [0692-top-k-frequent-words](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0692-top-k-frequent-words) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0703-kth-largest-element-in-a-stream) |
