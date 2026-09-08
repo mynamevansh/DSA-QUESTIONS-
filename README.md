@@ -241,6 +241,7 @@ This project is open source and available for educational purposes.
 | [0002-add-two-numbers](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0002-add-two-numbers) |
 | [0973-k-closest-points-to-origin](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0973-k-closest-points-to-origin) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/3658-gcd-of-odd-and-even-sums) |
+| [3870-count-commas-in-range](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/3870-count-commas-in-range) |
 | [3875-construct-uniform-parity-array-i](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/3875-construct-uniform-parity-array-i) |
 | [3876-construct-uniform-parity-array-ii](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/3876-construct-uniform-parity-array-ii) |
 ## Array
