@@ -329,6 +329,7 @@ This project is open source and available for educational purposes.
 | [0572-subtree-of-another-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0572-subtree-of-another-tree) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0703-kth-largest-element-in-a-stream) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/1448-count-good-nodes-in-binary-tree) |
+| [2265-count-nodes-equal-to-average-of-subtree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/2265-count-nodes-equal-to-average-of-subtree) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -347,6 +348,7 @@ This project is open source and available for educational purposes.
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0572-subtree-of-another-tree) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/1448-count-good-nodes-in-binary-tree) |
+| [2265-count-nodes-equal-to-average-of-subtree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/2265-count-nodes-equal-to-average-of-subtree) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -380,6 +382,7 @@ This project is open source and available for educational purposes.
 | [0572-subtree-of-another-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0572-subtree-of-another-tree) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0703-kth-largest-element-in-a-stream) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/1448-count-good-nodes-in-binary-tree) |
+| [2265-count-nodes-equal-to-average-of-subtree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/2265-count-nodes-equal-to-average-of-subtree) |
 ## String Matching
 |  |
 | ------- |
