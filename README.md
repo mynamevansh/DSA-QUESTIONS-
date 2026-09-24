@@ -240,6 +240,7 @@ This project is open source and available for educational purposes.
 | ------- |
 | [0002-add-two-numbers](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0002-add-two-numbers) |
 | [0973-k-closest-points-to-origin](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0973-k-closest-points-to-origin) |
+| [3550-smallest-index-with-digit-sum-equal-to-index](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/3550-smallest-index-with-digit-sum-equal-to-index) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/3658-gcd-of-odd-and-even-sums) |
 | [3870-count-commas-in-range](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/3870-count-commas-in-range) |
 | [3871-count-commas-in-range-ii](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/3871-count-commas-in-range-ii) |
@@ -259,6 +260,7 @@ This project is open source and available for educational purposes.
 | [0973-k-closest-points-to-origin](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0973-k-closest-points-to-origin) |
 | [1046-last-stone-weight](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/1046-last-stone-weight) |
 | [2404-most-frequent-even-element](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/2404-most-frequent-even-element) |
+| [3550-smallest-index-with-digit-sum-equal-to-index](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/3550-smallest-index-with-digit-sum-equal-to-index) |
 | [3875-construct-uniform-parity-array-i](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/3875-construct-uniform-parity-array-i) |
 | [3876-construct-uniform-parity-array-ii](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/3876-construct-uniform-parity-array-ii) |
 | [3903-smallest-stable-index-i](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/3903-smallest-stable-index-i) |
