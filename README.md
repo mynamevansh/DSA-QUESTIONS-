@@ -215,6 +215,7 @@ This project is open source and available for educational purposes.
 | [0138-copy-list-with-random-pointer](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0141-linked-list-cycle) |
 | [0146-lru-cache](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0146-lru-cache) |
+| [0217-contains-duplicate](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0217-contains-duplicate) |
 | [0347-top-k-frequent-elements](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0347-top-k-frequent-elements) |
 | [0355-design-twitter](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0355-design-twitter) |
 | [0621-task-scheduler](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0621-task-scheduler) |
@@ -252,6 +253,7 @@ This project is open source and available for educational purposes.
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0215-kth-largest-element-in-an-array](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0215-kth-largest-element-in-an-array) |
+| [0217-contains-duplicate](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0217-contains-duplicate) |
 | [0287-find-the-duplicate-number](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0287-find-the-duplicate-number) |
 | [0347-top-k-frequent-elements](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0347-top-k-frequent-elements) |
 | [0414-third-maximum-number](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0414-third-maximum-number) |
@@ -413,6 +415,7 @@ This project is open source and available for educational purposes.
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0215-kth-largest-element-in-an-array) |
+| [0217-contains-duplicate](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0217-contains-duplicate) |
 | [0347-top-k-frequent-elements](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0347-top-k-frequent-elements) |
 | [0414-third-maximum-number](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0414-third-maximum-number) |
 | [0621-task-scheduler](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0621-task-scheduler) |
