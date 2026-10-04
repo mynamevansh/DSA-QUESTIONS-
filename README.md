@@ -211,6 +211,7 @@ This project is open source and available for educational purposes.
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0001-two-sum) |
+| [0049-group-anagrams](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0049-group-anagrams) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0138-copy-list-with-random-pointer](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0138-copy-list-with-random-pointer) |
@@ -253,6 +254,7 @@ This project is open source and available for educational purposes.
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0001-two-sum) |
+| [0049-group-anagrams](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0049-group-anagrams) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0215-kth-largest-element-in-an-array](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0215-kth-largest-element-in-an-array) |
@@ -393,6 +395,7 @@ This project is open source and available for educational purposes.
 ## String Matching
 |  |
 | ------- |
+| [0049-group-anagrams](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0049-group-anagrams) |
 | [0242-valid-anagram](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0242-valid-anagram) |
 | [0572-subtree-of-another-tree](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0572-subtree-of-another-tree) |
 | [0692-top-k-frequent-words](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0692-top-k-frequent-words) |
@@ -418,6 +421,7 @@ This project is open source and available for educational purposes.
 ## Sorting
 |  |
 | ------- |
+| [0049-group-anagrams](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0049-group-anagrams) |
 | [0215-kth-largest-element-in-an-array](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0215-kth-largest-element-in-an-array) |
 | [0217-contains-duplicate](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0242-valid-anagram) |
