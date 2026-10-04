@@ -210,6 +210,7 @@ This project is open source and available for educational purposes.
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0001-two-sum) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0138-copy-list-with-random-pointer](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0138-copy-list-with-random-pointer) |
@@ -251,6 +252,7 @@ This project is open source and available for educational purposes.
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0001-two-sum) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0215-kth-largest-element-in-an-array](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0215-kth-largest-element-in-an-array) |
