@@ -259,6 +259,7 @@ This project is open source and available for educational purposes.
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0215-kth-largest-element-in-an-array](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0215-kth-largest-element-in-an-array) |
 | [0217-contains-duplicate](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0217-contains-duplicate) |
+| [0238-product-of-array-except-self](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0238-product-of-array-except-self) |
 | [0287-find-the-duplicate-number](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0287-find-the-duplicate-number) |
 | [0347-top-k-frequent-elements](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0347-top-k-frequent-elements) |
 | [0414-third-maximum-number](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0414-third-maximum-number) |
@@ -471,6 +472,7 @@ This project is open source and available for educational purposes.
 ## Prefix Sum
 |  |
 | ------- |
+| [0238-product-of-array-except-self](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/0238-product-of-array-except-self) |
 | [3903-smallest-stable-index-i](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/3903-smallest-stable-index-i) |
 | [3904-smallest-stable-index-ii](https://github.com/mynamevansh/DSA-QUESTIONS-/tree/master/3904-smallest-stable-index-ii) |
 <!---LeetCode Topics End-->
